@@ -19,14 +19,19 @@
     <style>
         
         .menu-arrow {
-            display: inline-block;
-            transition: transform 0.3s ease; /* Smooth transition for rotation */
+            font-family: 'FontAwesome'; /* Ensure you use the correct font */
+            display: inline-block; /* Necessary for the transform to work */
+            transform: rotate(180deg)!important;
         }
 
+        .sidebar{
+            overflow-y: auto;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
         
-            .menu-arrow.rotate {
-                transform: rotate(90deg); /* Rotate 90 degrees when active */
-            }
+        .menu-arrow.rotate {
+            transform: rotate(90deg)!important; /* Rotate 90 degrees when active */
+        }
     </style>
 
 
