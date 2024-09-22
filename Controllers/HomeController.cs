@@ -15,6 +15,7 @@ namespace FirstProjectWithMVC.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.SidebarActive = true; // Set based on logic
             return View();
         }
 

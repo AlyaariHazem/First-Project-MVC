@@ -9,10 +9,12 @@ namespace FirstProjectWithMVC.Controllers
         DataContext context = new DataContext();
         public IActionResult Index()
         {
-            List<Department> departmentList = 
-                context.Department.Include(d=>d.Emps)
-                .ToList();
-            return View("Index",departmentList);//Model List<department>
+            bool sidebarState = true; // Set based on your logic
+            return View(new { Sidebar = sidebarState });
+        }
+        public IActionResult add()
+        {
+            return View("Add");
         }
     }
 }

@@ -1,0 +1,97 @@
+﻿<div class="sidebar" [ngClass]="{ active: sidebar }" id="sidebar">
+    <div class="sidebar-inner">
+        <div id="sidebar-menu" class="sidebar-menu">
+            <div class="header-left">
+                <a class="logo">
+                    <img src="~/img/logo1.png" width="40" height="40" alt="" />
+                    <span class="text-uppercase">مدرستي</span>
+                </a>
+                
+            </div>
+            <ul class="sidebar-ul" dir="rtl">
+                <li class="menu-title">القائمة</li>
+                <li class="active">
+                    <a href="/admin/dashboard">
+                        <img src="~/img/sidebar/icon-1.png" alt="icon" />
+                        <span>الصفحة الرئيسية</span>
+                    </a>
+                </li>
+                <!-- الإعدادات (Sittings) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('sittings')">
+                        <img src="~/img/sidebar/icon-14.png" alt="icon">
+                        <span> الإعدادات</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-sittings" style="display: none;">
+                        <li><a href="@Url.Action("Years", "Sitting")"><span> السنوات الدراسية</span></a></li>
+                        <li><a href="@Url.Action("SchoolInfo", "Sitting")"><span>معلومات المدرسة</span></a></li>
+                        <li><a href="@Url.Action("Stages", "Sitting")"><span>المراحل والصفوف</span></a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/school">
+                        <img src="~/img/sidebar/icon-26.png" alt="icon" />
+                        <span> المدارس</span>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/user">
+                        <img src="~/img/sidebar/icon-3.png" alt="icon" />
+                        <span> المستخدمين</span>
+                    </a>
+                </li>
+
+                <li class="submenu">
+                    <a routerLink="/admin/media">
+                        <img src="~/img/sidebar/icon-28.png" alt="icon" />
+                        <span> بوابة الإعلام</span>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/customer">
+                        <img src="~/img/sidebar/icon-10.png" alt="icon" />
+                        <span> الزبائن</span>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/message">
+                        <img src="~/img/sidebar/icon-23.png" alt="icon" />
+                        <span> الرسائل</span>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/file">
+                        <img src="~/img/sidebar/icon-12.png" alt="icon" />
+                        <span> ملف المدير</span>
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a routerLink="/admin/sitting">
+                        <img src="~/img/sidebar/icon-14.png" alt="icon" />
+                        <span> الإعدادات</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Toggle function for submenus
+   
+    function toggleSubmenu(submenuId) {
+        var submenu = document.getElementById('submenu-' + submenuId);
+        var arrow = submenu.previousElementSibling.querySelector('.menu-arrow');
+
+        // Check the current display state and toggle the submenu
+        if (submenu.style.display === 'none' || submenu.style.display === '') {
+            submenu.style.display = 'block';  // Show the submenu
+            arrow.classList.add('rotate');   // Rotate the arrow
+        } else {
+            submenu.style.display = 'none';  // Hide the submenu
+            arrow.classList.remove('rotate');  // Reset the arrow rotation
+        }
+    }
+
+</script>

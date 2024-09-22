@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FirstProjectWithMVC
 build_property.RootNamespace = FirstProjectWithMVC
@@ -17,6 +25,14 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\alyaa\source\repos\FirstProjectWithMVC\FirstProjectWithMVC
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Department/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
@@ -40,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_ValidationScriptsPartial.cshtml]

@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+.container {
+    width: 77% !important;
+    margin-top: 8rem !important;
+    margin-right: 23% !important;
+}

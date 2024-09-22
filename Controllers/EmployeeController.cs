@@ -28,9 +28,7 @@ namespace FirstProjectWithMVC.Controllers
 
             ViewData["Color"] = "Blue";
             ViewBag.Color = "REd";
-            //ViewData.Model=empMo
-            Employee EmpMOdel = context.Employee.FirstOrDefault(e => e.Id == id);
-            return View("Details", EmpMOdel);
+            return Content("hello");
         }
 
 

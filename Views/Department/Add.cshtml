@@ -1,0 +1,58 @@
+﻿@model FirstProjectWithMVC.Models.Department
+
+@{
+    ViewData["Title"] = "إضافة قسم";
+}
+
+
+<h1 class="text-center mb-4">إضافة قسم</h1>
+
+<div class="container">
+    <form asp-action="Create" method="post" class="needs-validation" novalidate>
+        <div class="row mb-3">
+            
+            <div class="col-md-6">
+                <label for="ManagerName" class="form-label">اسم المدير</label>
+                <input type="text" class="form-control" id="ManagerName" name="ManagerName">
+                <div class="invalid-feedback">
+                    يرجى إدخال اسم المدير.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="Name" class="form-label">اسم القسم</label>
+                <input type="text" class="form-control" id="Name" name="Name" required>
+                <div class="invalid-feedback">
+                    يرجى إدخال اسم القسم.
+                </div>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">إضافة قسم</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">العودة إلى القائمة</a>
+    </form>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+
+@section Scripts {
+    <script>
+        // مثال على التحقق من صحة Bootstrap
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })();
+    </script>
+}

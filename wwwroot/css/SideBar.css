@@ -1,0 +1,15 @@
+﻿.d-none {
+    display: none;
+}
+
+.sidebar {
+    overflow-y: scroll;
+}
+
+.menu-arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate-arrow {
+    transform: rotate(90deg);
+}

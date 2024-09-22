@@ -5,16 +5,400 @@
       "PackagePath": "staticwebassets\\FirstProjectWithMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\SideBar.css",
+      "PackagePath": "staticwebassets\\css\\SideBar.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\images\\phone1.jpg",
+      "PackagePath": "staticwebassets\\images\\phone1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\images\\٢٠٢٢٠٧٠٩_١٠٠٧٣٨.jpg",
+      "PackagePath": "staticwebassets\\images\\٢٠٢٢٠٧٠٩_١٠٠٧٣٨.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\images\\٢٠٢٢١٠٠٨_٠٩١٨١٧.jpg",
+      "PackagePath": "staticwebassets\\images\\٢٠٢٢١٠٠٨_٠٩١٨١٧.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\Hazem.jpg",
+      "PackagePath": "staticwebassets\\img\\Hazem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\OIP.jfif",
+      "PackagePath": "staticwebassets\\img\\OIP.jfif"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\arrow.svg",
+      "PackagePath": "staticwebassets\\img\\arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\attachment.png",
+      "PackagePath": "staticwebassets\\img\\attachment.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\bg-account.jpeg",
+      "PackagePath": "staticwebassets\\img\\bg-account.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-01.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-02.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-03.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-04.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\blog\\blog-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\blog-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\calander.png",
+      "PackagePath": "staticwebassets\\img\\calander.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\dash\\dash-1.png",
+      "PackagePath": "staticwebassets\\img\\dash\\dash-1.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\dash\\dash-2.png",
+      "PackagePath": "staticwebassets\\img\\dash\\dash-2.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\dash\\dash-3.png",
+      "PackagePath": "staticwebassets\\img\\dash\\dash-3.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\dash\\dash-4.png",
+      "PackagePath": "staticwebassets\\img\\dash\\dash-4.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\excel.png",
+      "PackagePath": "staticwebassets\\img\\excel.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\hazem pro.jpg",
+      "PackagePath": "staticwebassets\\img\\hazem pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\img-01.jpg",
+      "PackagePath": "staticwebassets\\img\\img-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\img-02.jpg",
+      "PackagePath": "staticwebassets\\img\\img-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\img-03.jpg",
+      "PackagePath": "staticwebassets\\img\\img-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\img-04.jpg",
+      "PackagePath": "staticwebassets\\img\\img-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\img-05.jpg",
+      "PackagePath": "staticwebassets\\img\\img-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\logo1.png",
+      "PackagePath": "staticwebassets\\img\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\pdf.png",
+      "PackagePath": "staticwebassets\\img\\pdf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\placeholder-thumb.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\placeholder.jpg",
+      "PackagePath": "staticwebassets\\img\\placeholder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\Hazem.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\Hazem.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\profile\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\profile\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-1.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-1.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-10.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-10.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-11.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-11.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-12.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-12.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-13.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-13.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-14.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-14.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-15.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-15.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-17.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-17.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-18.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-18.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-19.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-19.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-2.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-2.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-20.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-20.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-21.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-21.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-22.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-22.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-23.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-23.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-26.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-26.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-27.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-27.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-28.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-28.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-3.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-3.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-4.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-4.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-5.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-5.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-6.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-6.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-7.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-7.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-8.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-8.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\sidebar\\icon-9.png",
+      "PackagePath": "staticwebassets\\img\\sidebar\\icon-9.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\user-02.jpg",
+      "PackagePath": "staticwebassets\\img\\user-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\user-03.jpg",
+      "PackagePath": "staticwebassets\\img\\user-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\user-06.jpg",
+      "PackagePath": "staticwebassets\\img\\user-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\img\\video-call.jpg",
+      "PackagePath": "staticwebassets\\img\\video-call.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\apexcharts.js",
+      "PackagePath": "staticwebassets\\js\\apexcharts.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\chart-data.js",
+      "PackagePath": "staticwebassets\\js\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\dataTables.bootstrap4.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.bootstrap4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\form-validation.js",
+      "PackagePath": "staticwebassets\\js\\form-validation.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\jquery.fullcalendar.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fullcalendar.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\jquery.slimscroll.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slimscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\tagsinput.js",
+      "PackagePath": "staticwebassets\\js\\tagsinput.js"
     },
     {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -243,6 +627,1450 @@
     {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\alertify\\alertify.min.css",
+      "PackagePath": "staticwebassets\\plugins\\alertify\\alertify.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\alertify\\alertify.min.js",
+      "PackagePath": "staticwebassets\\plugins\\alertify\\alertify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\alertify\\custom-alertify.min.js",
+      "PackagePath": "staticwebassets\\plugins\\alertify\\custom-alertify.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\apexchart\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\plugins\\apexchart\\apexcharts.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\apexchart\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\apexchart\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\c3-chart\\c3.min.css",
+      "PackagePath": "staticwebassets\\plugins\\c3-chart\\c3.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\c3-chart\\c3.min.js",
+      "PackagePath": "staticwebassets\\plugins\\c3-chart\\c3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\c3-chart\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\c3-chart\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\c3-chart\\d3.v5.min.js",
+      "PackagePath": "staticwebassets\\plugins\\c3-chart\\d3.v5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\chartjs\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\chartjs\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\chartjs\\chart.min.js",
+      "PackagePath": "staticwebassets\\plugins\\chartjs\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\clipboard\\clipboard.min.js",
+      "PackagePath": "staticwebassets\\plugins\\clipboard\\clipboard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\countup\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\plugins\\countup\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\countup\\jquery.missofis-countdown.js",
+      "PackagePath": "staticwebassets\\plugins\\countup\\jquery.missofis-countdown.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\countup\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\plugins\\countup\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\datetimepicker\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\plugins\\datetimepicker\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\datetimepicker\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\plugins\\datetimepicker\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\dragula\\css\\dragula.min.css",
+      "PackagePath": "staticwebassets\\plugins\\dragula\\css\\dragula.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\dragula\\js\\drag-drop.min.js",
+      "PackagePath": "staticwebassets\\plugins\\dragula\\js\\drag-drop.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\dragula\\js\\dragula.min.js",
+      "PackagePath": "staticwebassets\\plugins\\dragula\\js\\dragula.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fileupload\\fileupload.min.js",
+      "PackagePath": "staticwebassets\\plugins\\fileupload\\fileupload.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\flot\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\flot\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\flot\\jquery.flot.fillbetween.js",
+      "PackagePath": "staticwebassets\\plugins\\flot\\jquery.flot.fillbetween.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\plugins\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\plugins\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400-1.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400-1.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400-1.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400-1.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900-1.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900-1.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\plugins\\fontawesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fullcalendar\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\plugins\\fullcalendar\\fullcalendar.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fullcalendar\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\plugins\\fullcalendar\\fullcalendar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fullcalendar\\jquery.fullcalendar.js",
+      "PackagePath": "staticwebassets\\plugins\\fullcalendar\\jquery.fullcalendar.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\fullcalendar\\locale-all.js",
+      "PackagePath": "staticwebassets\\plugins\\fullcalendar\\locale-all.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\feather\\feather.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\feather\\feather.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\feather\\fonts\\feather-webfont.woff",
+      "PackagePath": "staticwebassets\\plugins\\icons\\feather\\fonts\\feather-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ad.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ad.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ae.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ae.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\af.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\af.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ag.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ag.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ai.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ai.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\al.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\al.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\am.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\am.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ao.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ao.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ar.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ar.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\as.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\as.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\at.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\at.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\au.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\au.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\aw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\aw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ax.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ax.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\az.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\az.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ba.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ba.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bb.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bb.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bd.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bd.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\be.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\be.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bh.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bh.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bi.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bi.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bj.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bj.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bo.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bo.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bq.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bq.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\br.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\br.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bs.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bs.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\by.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\by.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\bz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\bz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ca.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ca.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cd.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cd.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ch.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ch.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ci.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ci.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ck.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ck.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\co.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\co.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cx.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cx.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cy.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cy.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\cz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\cz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\de.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\de.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\dj.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\dj.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\dk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\dk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\dm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\dm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\do.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\do.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\dz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\dz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ec.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ec.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ee.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ee.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\eg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\eg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\er.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\er.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\es.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\es.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\et.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\et.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fi.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fi.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fj.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fj.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fo.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fo.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\fr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\fr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ga.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ga.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gb.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gb.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gd.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gd.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ge.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ge.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gh.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gh.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gi.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gi.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gp.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gp.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gq.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gq.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gs.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gs.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\gy.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\gy.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\hk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\hk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\hn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\hn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\hr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\hr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ht.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ht.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\hu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\hu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\id.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\id.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ie.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ie.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\il.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\il.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\im.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\im.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\in.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\in.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\io.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\io.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\iq.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\iq.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ir.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ir.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\is.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\is.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\it.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\it.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\je.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\je.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\jm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\jm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\jo.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\jo.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\jp.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\jp.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ke.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ke.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kh.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kh.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ki.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ki.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\km.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\km.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kp.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kp.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ky.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ky.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\kz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\kz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\la.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\la.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lb.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lb.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\li.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\li.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ls.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ls.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\lv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\lv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ly.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ly.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ma.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ma.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\md.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\md.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\me.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\me.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mh.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mh.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ml.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ml.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mo.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mo.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mp.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mp.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mq.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mq.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ms.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ms.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mx.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mx.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\my.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\my.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\mz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\mz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\na.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\na.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ne.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ne.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ng.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ng.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ni.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ni.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\no.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\no.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\np.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\np.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\nz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\nz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\om.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\om.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pa.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pa.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pe.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pe.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ph.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ph.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ps.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ps.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\pw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\pw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\py.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\py.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\qa.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\qa.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\re.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\re.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ro.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ro.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\rs.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\rs.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ru.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ru.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\rw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\rw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sa.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sa.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sb.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sb.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sd.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sd.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\se.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\se.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sh.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sh.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\si.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\si.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\so.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\so.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ss.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ss.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\st.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\st.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sx.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sx.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sy.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sy.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\sz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\sz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\td.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\td.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\th.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\th.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tj.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tj.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tk.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tk.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tl.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tl.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\to.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\to.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tr.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tr.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tv.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tv.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\tz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\tz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ua.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ua.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ug.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ug.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\um.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\um.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\us.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\us.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\uy.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\uy.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\uz.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\uz.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\va.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\va.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\vc.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\vc.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ve.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ve.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\vg.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\vg.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\vi.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\vi.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\vn.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\vn.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\vu.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\vu.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\wf.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\wf.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ws.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ws.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\ye.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\ye.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\yt.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\yt.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\za.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\za.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\zm.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\zm.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\flags\\flags\\zw.png",
+      "PackagePath": "staticwebassets\\plugins\\icons\\flags\\flags\\zw.png"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\ionic\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\plugins\\icons\\ionic\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\ionic\\ionicons.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\ionic\\ionicons.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\pe7\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\plugins\\icons\\pe7\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\pe7\\pe-icon-7.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\pe7\\pe-icon-7.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\themify\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\plugins\\icons\\themify\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\themify\\themify.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\themify\\themify.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\typicons\\fonts\\typicons.woff",
+      "PackagePath": "staticwebassets\\plugins\\icons\\typicons\\fonts\\typicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\typicons\\typicons.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\typicons\\typicons.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\weather\\fonts\\weathericons-regular-webfont.woff2",
+      "PackagePath": "staticwebassets\\plugins\\icons\\weather\\fonts\\weathericons-regular-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\icons\\weather\\weathericons.css",
+      "PackagePath": "staticwebassets\\plugins\\icons\\weather\\weathericons.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\ion-rangeslider\\css\\ion.rangeSlider.min.css",
+      "PackagePath": "staticwebassets\\plugins\\ion-rangeslider\\css\\ion.rangeSlider.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\ion-rangeslider\\js\\custom-rangeslider.js",
+      "PackagePath": "staticwebassets\\plugins\\ion-rangeslider\\js\\custom-rangeslider.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\ion-rangeslider\\js\\ion.rangeSlider.min.js",
+      "PackagePath": "staticwebassets\\plugins\\ion-rangeslider\\js\\ion.rangeSlider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\jquery-ui\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\plugins\\jquery-ui\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\lightbox\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\plugins\\lightbox\\glightbox.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\lightbox\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\plugins\\lightbox\\glightbox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\lightbox\\lightbox.js",
+      "PackagePath": "staticwebassets\\plugins\\lightbox\\lightbox.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\material\\fonts\\Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets\\plugins\\material\\fonts\\Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\material\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\plugins\\material\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\material\\materialdesignicons.css",
+      "PackagePath": "staticwebassets\\plugins\\material\\materialdesignicons.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\morris\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\morris\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\morris\\morris.css",
+      "PackagePath": "staticwebassets\\plugins\\morris\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\plugins\\morris\\morris.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\morris\\raphael-min.js",
+      "PackagePath": "staticwebassets\\plugins\\morris\\raphael-min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\peity\\chart-data.js",
+      "PackagePath": "staticwebassets\\plugins\\peity\\chart-data.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\peity\\jquery.peity.min.js",
+      "PackagePath": "staticwebassets\\plugins\\peity\\jquery.peity.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\raphael\\raphael-min.js",
+      "PackagePath": "staticwebassets\\plugins\\raphael\\raphael-min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\raty\\custom.raty.js",
+      "PackagePath": "staticwebassets\\plugins\\raty\\custom.raty.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\raty\\jquery.raty.js",
+      "PackagePath": "staticwebassets\\plugins\\raty\\jquery.raty.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\scrollbar\\custom-scroll.js",
+      "PackagePath": "staticwebassets\\plugins\\scrollbar\\custom-scroll.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\scrollbar\\scroll.min.css",
+      "PackagePath": "staticwebassets\\plugins\\scrollbar\\scroll.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\scrollbar\\scrollbar.min.js",
+      "PackagePath": "staticwebassets\\plugins\\scrollbar\\scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\plugins\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\select2\\js\\custom-select.js",
+      "PackagePath": "staticwebassets\\plugins\\select2\\js\\custom-select.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\simpleline\\fonts\\Simple-Line-Icons.woff2",
+      "PackagePath": "staticwebassets\\plugins\\simpleline\\fonts\\Simple-Line-Icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\simpleline\\simple-line-icons.css",
+      "PackagePath": "staticwebassets\\plugins\\simpleline\\simple-line-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\stickynote\\sticky.css",
+      "PackagePath": "staticwebassets\\plugins\\stickynote\\sticky.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\stickynote\\sticky.js",
+      "PackagePath": "staticwebassets\\plugins\\stickynote\\sticky.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\font\\summernote-1.eot",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote-1.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\summernote-bs4.css",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\summernote-bs4.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\dist\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\dist\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\font\\summernote-1.eot",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\font\\summernote-1.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\summernote-bs4.min.css",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\summernote-bs4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\summernote\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\plugins\\summernote\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\sweetalert\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\plugins\\sweetalert\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\sweetalert\\sweetalerts.min.js",
+      "PackagePath": "staticwebassets\\plugins\\sweetalert\\sweetalerts.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\theia-sticky-sidebar\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\timeline\\horizontal-timeline.js",
+      "PackagePath": "staticwebassets\\plugins\\timeline\\horizontal-timeline.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\toastr\\toastr.js",
+      "PackagePath": "staticwebassets\\plugins\\toastr\\toastr.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\toastr\\toastr.min.js",
+      "PackagePath": "staticwebassets\\plugins\\toastr\\toastr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\toastr\\toatr.css",
+      "PackagePath": "staticwebassets\\plugins\\toastr\\toatr.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\twitter-bootstrap-wizard\\form-wizard.css",
+      "PackagePath": "staticwebassets\\plugins\\twitter-bootstrap-wizard\\form-wizard.css"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\twitter-bootstrap-wizard\\form-wizard.js",
+      "PackagePath": "staticwebassets\\plugins\\twitter-bootstrap-wizard\\form-wizard.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\twitter-bootstrap-wizard\\jquery.bootstrap.wizard.min.js",
+      "PackagePath": "staticwebassets\\plugins\\twitter-bootstrap-wizard\\jquery.bootstrap.wizard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\plugins\\twitter-bootstrap-wizard\\prettify.js",
+      "PackagePath": "staticwebassets\\plugins\\twitter-bootstrap-wizard\\prettify.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FirstProjectWithMVC.Microsoft.AspNetCore.StaticWebAssets.props",
