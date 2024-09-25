@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -1,0 +1,110 @@
+﻿<div id="id01" class="">
+    <div class="modal-content">
+        <div class="container1" dir="rtl">
+            <h2 class="school">تخصيص المدرسة</h2>
+
+            <button class="tab" onclick="TabContent('contentStages')" aria-controls="contentStages" aria-expanded="true">
+                <span>المراحل</span>
+            </button>
+
+            <button class="tab" onclick="TabContent('contentClasses')" aria-controls="contentClasses" aria-expanded="false">
+                <span>الصفوف</span>
+            </button>
+
+            <button class="tab" onclick="TabContent('contentDivisions')" aria-controls="contentDivisions" aria-expanded="false">
+                <span>الشُـعـب</span>
+            </button>
+
+            <br />
+
+            <div id="contentStages">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم المرحلة</th>
+                            <th>صفوف</th>
+                            <th>إجمالي الطلاب</th>
+                            <th>ملاحظة</th>
+                            <th>الحالة</th>
+                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div id="contentClasses" style="display: none;">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم الصف</th>
+                            <th>صفوف</th>
+                            <th>إجمالي الطلاب</th>
+                            <th>ملاحظة</th>
+                            <th>الحالة</th>
+                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div id="contentDivisions" style="display: none;">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم الشعبة</th>
+                            <th>صفوف</th>
+                            <th>إجمالي الطلاب</th>
+                            <th>ملاحظة</th>
+                            <th>الحالة</th>
+                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function TabContent(tabClicked) {
+        const tabs = ["contentStages", "contentClasses", "contentDivisions"];
+        
+        // Loop through tabs to hide/show and manage classes
+        tabs.forEach(tab => {
+            const tabElement = document.getElementById(tab);
+            const buttonElement = document.querySelector(`button[onclick="TabContent('${tab}')"]`);
+
+            if (tab === tabClicked) {
+                tabElement.style.display = "block"; // Show the selected tab content
+                buttonElement.classList.add("tabChecked"); // Add active class to the button
+                buttonElement.setAttribute("aria-expanded", "true");
+            } else {
+                tabElement.style.display = "none"; // Hide other tab content
+                buttonElement.classList.remove("tabChecked"); // Remove active class from other buttons
+                buttonElement.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Load content if not already loaded
+        if ($("#" + tabClicked).html().trim() === "") {
+            loadTabContent('/path-to-your-api/' + tabClicked, tabClicked);
+        }
+    }
+
+    function loadTabContent(url, targetId) {
+        $.ajax({
+            url: url,
+            method: 'GET',
+            success: function (data) {
+                $("#" + targetId).html(data);
+            },
+            error: function (err) {
+                console.error('Error loading content:', err);
+            }
+        });
+    }
+</script>
+

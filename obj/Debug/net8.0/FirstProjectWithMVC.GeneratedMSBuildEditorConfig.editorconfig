@@ -30,20 +30,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Dashboard/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Department/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Department/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Employee/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Employee/DetailsVM.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlsc1ZNLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Index.cshtml]
@@ -68,6 +64,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/ManageStages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXE1hbmFnZVN0YWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/StagesTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXFN0YWdlc1RhYmxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewImports.cshtml]

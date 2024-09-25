@@ -24,7 +24,7 @@ namespace FirstProjectWithMVC
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Department}/{action=Index}");
+                pattern: "{controller=Dashboard}/{action=Index}");
 
             app.Run();
         }
