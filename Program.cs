@@ -1,3 +1,6 @@
+using FirstProjectWithMVC.Models;
+using FirstProjectWithMVC.Repository;
+
 namespace FirstProjectWithMVC
 {
     public class Program
@@ -8,6 +11,14 @@ namespace FirstProjectWithMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //connection with Database 
+            builder.Services.AddDbContext<DataContext>(options=>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            }
+            );
+
+            builder.Services.AddScoped<IStagesRepository,StagesRepository>();
 
             var app = builder.Build();
 
@@ -27,6 +38,8 @@ namespace FirstProjectWithMVC
                 pattern: "{controller=Dashboard}/{action=Index}");
 
             app.Run();
+            
         }
+        
     }
 }

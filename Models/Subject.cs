@@ -9,11 +9,11 @@ namespace Backend.Models
  public class Subject
     {
         public int SubjectID { get; set; }
-        public string SubjectName { get; set; }
+        public string SubjectName { get; set; }=string.Empty;
         public int ClassID { get; set; }
         [JsonIgnore]
-        public Class Class { get; set; }
-        public virtual ICollection<SubjectStudent> SubjectStudents { get; set; }
-        public virtual ICollection<TeacherSubjectStudent> TeacherSubjectStudents { get; set; }
+        public Class? Class { get; set; }
+        public virtual ICollection<SubjectStudent>? SubjectStudents { get; set; }
+        public virtual ICollection<TeacherSubjectStudent>? TeacherSubjectStudents { get; set; }
     }
     }

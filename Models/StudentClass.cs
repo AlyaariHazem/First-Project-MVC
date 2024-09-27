@@ -10,9 +10,9 @@ public class StudentClass
 {
     public int ClassID { get; set; } // Corrected property name
     [JsonIgnore]
-    public Class Class { get; set; }
+    public Class? Class { get; set; }
     public int StudentID { get; set; }
     [JsonIgnore]
-    public Student Student { get; set; }
+    public Student? Student { get; set; }
 }
 }

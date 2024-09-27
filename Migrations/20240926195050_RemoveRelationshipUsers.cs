@@ -6,11 +6,33 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FirstProjectWithMVC.Migrations
 {
     /// <inheritdoc />
-    public partial class ChangedDatabase : Migration
+    public partial class RemoveRelationshipUsers : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Guardians",
+                columns: table => new
+                {
+                    GuardianID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName_FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_SecondName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_ThirdName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Job = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TypeGuardian = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Guardians", x => x.GuardianID);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Schools",
                 columns: table => new
@@ -57,6 +79,33 @@ namespace FirstProjectWithMVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Managers",
+                columns: table => new
+                {
+                    ManagerID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName_FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_SecondName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_ThirdName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName_LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Age = table.Column<int>(type: "int", nullable: true),
+                    SchoolID = table.Column<int>(type: "int", nullable: false),
+                    UserID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Managers", x => x.ManagerID);
+                    table.ForeignKey(
+                        name: "FK_Managers_Schools_SchoolID",
+                        column: x => x.SchoolID,
+                        principalTable: "Schools",
+                        principalColumn: "SchoolID",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Years",
                 columns: table => new
                 {
@@ -76,90 +125,6 @@ namespace FirstProjectWithMVC.Migrations
                         column: x => x.SchoolID,
                         principalTable: "Schools",
                         principalColumn: "SchoolID",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Guardians",
-                columns: table => new
-                {
-                    GuardianID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FullName_FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_SecondName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_ThirdName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Job = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TypeGuardian = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Guardians", x => x.GuardianID);
-                    table.ForeignKey(
-                        name: "FK_Guardians_Users_UserID",
-                        column: x => x.UserID,
-                        principalTable: "Users",
-                        principalColumn: "UserID",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Managers",
-                columns: table => new
-                {
-                    ManagerID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    FullName_FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_SecondName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_ThirdName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    FullName_LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Age = table.Column<int>(type: "int", nullable: true),
-                    SchoolID = table.Column<int>(type: "int", nullable: false),
-                    UserID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Managers", x => x.ManagerID);
-                    table.ForeignKey(
-                        name: "FK_Managers_Schools_SchoolID",
-                        column: x => x.SchoolID,
-                        principalTable: "Schools",
-                        principalColumn: "SchoolID",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Managers_Users_UserID",
-                        column: x => x.UserID,
-                        principalTable: "Users",
-                        principalColumn: "UserID",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Stages",
-                columns: table => new
-                {
-                    StageID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    StageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Active = table.Column<bool>(type: "bit", nullable: false),
-                    HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    YearID = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Stages", x => x.StageID);
-                    table.ForeignKey(
-                        name: "FK_Stages_Years_YearID",
-                        column: x => x.YearID,
-                        principalTable: "Years",
-                        principalColumn: "YearID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -190,32 +155,28 @@ namespace FirstProjectWithMVC.Migrations
                         principalTable: "Managers",
                         principalColumn: "ManagerID",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Teachers_Users_UserID",
-                        column: x => x.UserID,
-                        principalTable: "Users",
-                        principalColumn: "UserID",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Classes",
+                name: "Stages",
                 columns: table => new
                 {
-                    ClassID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ClassName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClassYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StageID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StageName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Note = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Active = table.Column<bool>(type: "bit", nullable: false),
+                    HireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    YearID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Classes", x => x.ClassID);
+                    table.PrimaryKey("PK_Stages", x => x.StageID);
                     table.ForeignKey(
-                        name: "FK_Classes_Stages_StageID",
-                        column: x => x.StageID,
-                        principalTable: "Stages",
-                        principalColumn: "StageID",
+                        name: "FK_Stages_Years_YearID",
+                        column: x => x.YearID,
+                        principalTable: "Years",
+                        principalColumn: "YearID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -239,6 +200,27 @@ namespace FirstProjectWithMVC.Migrations
                         column: x => x.TeacherID,
                         principalTable: "Teachers",
                         principalColumn: "TeacherID",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Classes",
+                columns: table => new
+                {
+                    ClassID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ClassName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ClassYear = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StageID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Classes", x => x.ClassID);
+                    table.ForeignKey(
+                        name: "FK_Classes_Stages_StageID",
+                        column: x => x.StageID,
+                        principalTable: "Stages",
+                        principalColumn: "StageID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -314,12 +296,6 @@ namespace FirstProjectWithMVC.Migrations
                         column: x => x.GuardianID,
                         principalTable: "Guardians",
                         principalColumn: "GuardianID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Students_Users_UserID",
-                        column: x => x.UserID,
-                        principalTable: "Users",
-                        principalColumn: "UserID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -412,19 +388,19 @@ namespace FirstProjectWithMVC.Migrations
                         column: x => x.StudentID,
                         principalTable: "Students",
                         principalColumn: "StudentID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_TeacherSubjectStudent_Subjects_SubjectID",
                         column: x => x.SubjectID,
                         principalTable: "Subjects",
                         principalColumn: "SubjectID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_TeacherSubjectStudent_Teachers_TeacherID",
                         column: x => x.TeacherID,
                         principalTable: "Teachers",
                         principalColumn: "TeacherID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -438,21 +414,9 @@ namespace FirstProjectWithMVC.Migrations
                 column: "ClassID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Guardians_UserID",
-                table: "Guardians",
-                column: "UserID",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Managers_SchoolID",
                 table: "Managers",
                 column: "SchoolID",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Managers_UserID",
-                table: "Managers",
-                column: "UserID",
                 unique: true);
 
             migrationBuilder.CreateIndex(
@@ -481,12 +445,6 @@ namespace FirstProjectWithMVC.Migrations
                 column: "GuardianID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Students_UserID",
-                table: "Students",
-                column: "UserID",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Subjects_ClassID",
                 table: "Subjects",
                 column: "ClassID");
@@ -500,12 +458,6 @@ namespace FirstProjectWithMVC.Migrations
                 name: "IX_Teachers_ManagerID",
                 table: "Teachers",
                 column: "ManagerID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Teachers_UserID",
-                table: "Teachers",
-                column: "UserID",
-                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_TeacherStudents_TeacherID",
@@ -547,6 +499,9 @@ namespace FirstProjectWithMVC.Migrations
                 name: "TeacherSubjectStudent");
 
             migrationBuilder.DropTable(
+                name: "Users");
+
+            migrationBuilder.DropTable(
                 name: "Students");
 
             migrationBuilder.DropTable(
@@ -566,9 +521,6 @@ namespace FirstProjectWithMVC.Migrations
 
             migrationBuilder.DropTable(
                 name: "Classes");
-
-            migrationBuilder.DropTable(
-                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Stages");

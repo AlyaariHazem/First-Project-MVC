@@ -19,8 +19,8 @@ namespace Backend.Models
         public string? TypeGuardian { get; set; }
         public string? Description { get; set; }
         public int UserID { get; set; }
-        [JsonIgnore]
-        public User User { get; set; }
+        // [JsonIgnore]
+        // public User User { get; set; }
         public virtual ICollection<Student> Students { get; set; }
     }
 }

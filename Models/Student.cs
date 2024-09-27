@@ -12,7 +12,7 @@ namespace Backend.Models
     {
         public int StudentID { get; set; }
         [Required]
-        public Name FullName { get; set; }
+        public Name? FullName { get; set; }
         public DateOnly DateOfBirth { get; set; }
         public string Gender { get; set; } = string.Empty;
 
@@ -20,18 +20,18 @@ namespace Backend.Models
         [Required]
         public int GuardianID { get; set; }
         [JsonIgnore]
-        public Guardian Guardian { get; set; }
+        public Guardian? Guardian { get; set; }
         [Required]
         public int UserID { get; set; }
-        [JsonIgnore]
-        public User User { get; set; }
+        // [JsonIgnore]
+        // public User User { get; set; }
         [Required]
         public int DivisionID { get; set; }
         [JsonIgnore]
-        public Division Division { get; set; }
-        public virtual ICollection<TeacherStudent> TeacherStudents { get; set; }
-        public virtual ICollection<SubjectStudent> SubjectStudents { get; set; }
-        public virtual ICollection<TeacherSubjectStudent> TeacherSubjectStudents { get; set; }
-        public virtual ICollection<StudentClass> StudentClass { get; set; }
+        public Division? Division { get; set; }
+        public virtual ICollection<TeacherStudent>? TeacherStudents { get; set; }
+        public virtual ICollection<SubjectStudent>? SubjectStudents { get; set; }
+        public virtual ICollection<TeacherSubjectStudent>? TeacherSubjectStudents { get; set; }
+        public virtual ICollection<StudentClass>? StudentClass { get; set; }
     }
 }

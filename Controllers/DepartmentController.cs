@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using FirstProjectWithMVC.Models;
 
 namespace FirstProjectWithMVC.Controllers

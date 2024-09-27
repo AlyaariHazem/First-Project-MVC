@@ -18,13 +18,13 @@ namespace Backend.Models
         public string UserType { get; set; } = "";
 
         // Navigation properties for specific user roles
-        [JsonIgnore]
-        public Guardian? Guardian { get; set; }
-        [JsonIgnore]
-        public Teacher? Teacher { get; set; }
-        [JsonIgnore]
-        public Student? Student { get; set; }
-        [JsonIgnore]
-        public Manager? Manager { get; set; }
+        // [JsonIgnore]
+        // public Guardian? Guardian { get; set; }
+        // [JsonIgnore]
+        // public Teacher? Teacher { get; set; }
+        // [JsonIgnore]
+        // public Student? Student { get; set; }
+        // [JsonIgnore]
+        // public Manager? Manager { get; set; }
     }
 }

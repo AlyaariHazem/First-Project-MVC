@@ -326,11 +326,6 @@ select:focus {
     border-collapse: collapse;
 }
 
-.styled-table th, .styled-table td {
-    padding: 12px 10px;
-    text-align: right;
-}
-
 .modal-content {
     background-color: #ffffff !important;
 }
@@ -353,7 +348,16 @@ h2.school {
     font-size:medium;
 }
 .tabChecked{
-    background-color: #2fdf84;
-    color:white;
-    border-radius: 5px;
+    
+    border-bottom: #2fdf84 3px solid;
+}
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+.class1{
+    margin-left:2rem;
 }

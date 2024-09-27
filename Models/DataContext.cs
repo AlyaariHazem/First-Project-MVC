@@ -26,13 +26,12 @@ namespace FirstProjectWithMVC.Models
         {
 
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public DataContext(DbContextOptions options) : base(options)
         {
-            optionsBuilder.UseSqlServer
-                ("Data Source=HAZEM\\SQLEXPRESS01;Initial Catalog=DatabaseMVC;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
-            base.OnConfiguring(optionsBuilder);
+            
         }
+
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -148,7 +147,7 @@ namespace FirstProjectWithMVC.Models
                 .HasMany<Student>(S => S.Students)
                 .WithOne(G => G.Guardian)
                 .HasForeignKey(S => S.GuardianID)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
 
             //composite Atribute for Student and Name
             modelBuilder.Entity<Student>()
@@ -167,48 +166,48 @@ namespace FirstProjectWithMVC.Models
             .OwnsOne(M => M.FullName);
 
             //this is for Roles 
-            modelBuilder.Entity<User>()
-            .HasOne(u => u.Guardian)
-            .WithOne(g => g.User)
-            .HasForeignKey<Guardian>(g => g.UserID)
-            .OnDelete(DeleteBehavior.Restrict);
+            // modelBuilder.Entity<User>()
+            // .HasOne(u => u.Guardian)
+            // .WithOne(g => g.User)
+            // .HasForeignKey<Guardian>(g => g.UserID)
+            // .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.Teacher)
-                .WithOne(t => t.User)
-                .HasForeignKey<Teacher>(t => t.UserID)
-                .OnDelete(DeleteBehavior.Restrict);
+            // modelBuilder.Entity<User>()
+            //     .HasOne(u => u.Teacher)
+            //     .WithOne(t => t.User)
+            //     .HasForeignKey<Teacher>(t => t.UserID)
+            //     .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.Student)
-                .WithOne(s => s.User)
-                .HasForeignKey<Student>(s => s.UserID)
-                .OnDelete(DeleteBehavior.Restrict);
+            // modelBuilder.Entity<User>()
+            //     .HasOne(u => u.Student)
+            //     .WithOne(s => s.User)
+            //     .HasForeignKey<Student>(s => s.UserID)
+            //     .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<User>()
-                .HasOne(u => u.Manager)
-                .WithOne(m => m.User)
-                .HasForeignKey<Manager>(m => m.UserID)
-                .OnDelete(DeleteBehavior.Restrict);
+            // modelBuilder.Entity<User>()
+            //     .HasOne(u => u.Manager)
+            //     .WithOne(m => m.User)
+            //     .HasForeignKey<Manager>(m => m.UserID)
+            //     .OnDelete(DeleteBehavior.Restrict);
 
             // Ternary relationship between Teachers, Students, and Subjects
             modelBuilder.Entity<TeacherSubjectStudent>()
                 .HasOne<Teacher>(tss => tss.Teacher)
                 .WithMany(t => t.TeacherSubjectStudents)
                 .HasForeignKey(tss => tss.TeacherID)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict); // Prevents cascade delete
 
             modelBuilder.Entity<TeacherSubjectStudent>()
                 .HasOne<Student>(tss => tss.Student)
                 .WithMany(s => s.TeacherSubjectStudents)
                 .HasForeignKey(tss => tss.StudentID)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict); // Prevents cascade delete
 
             modelBuilder.Entity<TeacherSubjectStudent>()
                 .HasOne<Subject>(tss => tss.Subject)
                 .WithMany(sub => sub.TeacherSubjectStudents)
                 .HasForeignKey(tss => tss.SubjectID)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict); // Prevents cascade delete
         }
 
     }

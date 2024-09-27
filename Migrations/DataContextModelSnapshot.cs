@@ -101,9 +101,6 @@ namespace FirstProjectWithMVC.Migrations
 
                     b.HasKey("GuardianID");
 
-                    b.HasIndex("UserID")
-                        .IsUnique();
-
                     b.ToTable("Guardians");
                 });
 
@@ -122,7 +119,6 @@ namespace FirstProjectWithMVC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SchoolID")
@@ -134,9 +130,6 @@ namespace FirstProjectWithMVC.Migrations
                     b.HasKey("ManagerID");
 
                     b.HasIndex("SchoolID")
-                        .IsUnique();
-
-                    b.HasIndex("UserID")
                         .IsUnique();
 
                     b.ToTable("Managers");
@@ -277,6 +270,9 @@ namespace FirstProjectWithMVC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentID"));
 
+                    b.Property<int>("ClassID")
+                        .HasColumnType("int");
+
                     b.Property<DateOnly>("DateOfBirth")
                         .HasColumnType("date");
 
@@ -298,12 +294,11 @@ namespace FirstProjectWithMVC.Migrations
 
                     b.HasKey("StudentID");
 
+                    b.HasIndex("ClassID");
+
                     b.HasIndex("DivisionID");
 
                     b.HasIndex("GuardianID");
-
-                    b.HasIndex("UserID")
-                        .IsUnique();
 
                     b.ToTable("Students");
                 });
@@ -397,9 +392,6 @@ namespace FirstProjectWithMVC.Migrations
                     b.HasKey("TeacherID");
 
                     b.HasIndex("ManagerID");
-
-                    b.HasIndex("UserID")
-                        .IsUnique();
 
                     b.ToTable("Teachers");
                 });
@@ -528,12 +520,6 @@ namespace FirstProjectWithMVC.Migrations
 
             modelBuilder.Entity("Backend.Models.Guardian", b =>
                 {
-                    b.HasOne("Backend.Models.User", "User")
-                        .WithOne("Guardian")
-                        .HasForeignKey("Backend.Models.Guardian", "UserID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.OwnsOne("Backend.Models.Name", "FullName", b1 =>
                         {
                             b1.Property<int>("GuardianID")
@@ -565,8 +551,6 @@ namespace FirstProjectWithMVC.Migrations
 
                     b.Navigation("FullName")
                         .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Backend.Models.Manager", b =>
@@ -574,12 +558,6 @@ namespace FirstProjectWithMVC.Migrations
                     b.HasOne("Backend.Models.School", "School")
                         .WithOne("Manager")
                         .HasForeignKey("Backend.Models.Manager", "SchoolID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Backend.Models.User", "User")
-                        .WithOne("Manager")
-                        .HasForeignKey("Backend.Models.Manager", "UserID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -616,8 +594,6 @@ namespace FirstProjectWithMVC.Migrations
                         .IsRequired();
 
                     b.Navigation("School");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Backend.Models.Salary", b =>
@@ -644,6 +620,12 @@ namespace FirstProjectWithMVC.Migrations
 
             modelBuilder.Entity("Backend.Models.Student", b =>
                 {
+                    b.HasOne("Backend.Models.Class", "Class")
+                        .WithMany("Students")
+                        .HasForeignKey("ClassID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("Backend.Models.Division", "Division")
                         .WithMany("Students")
                         .HasForeignKey("DivisionID")
@@ -653,12 +635,6 @@ namespace FirstProjectWithMVC.Migrations
                     b.HasOne("Backend.Models.Guardian", "Guardian")
                         .WithMany("Students")
                         .HasForeignKey("GuardianID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Backend.Models.User", "User")
-                        .WithOne("Student")
-                        .HasForeignKey("Backend.Models.Student", "UserID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -691,14 +667,14 @@ namespace FirstProjectWithMVC.Migrations
                                 .HasForeignKey("StudentID");
                         });
 
+                    b.Navigation("Class");
+
                     b.Navigation("Division");
 
                     b.Navigation("FullName")
                         .IsRequired();
 
                     b.Navigation("Guardian");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Backend.Models.StudentClass", b =>
@@ -758,12 +734,6 @@ namespace FirstProjectWithMVC.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Backend.Models.User", "User")
-                        .WithOne("Teacher")
-                        .HasForeignKey("Backend.Models.Teacher", "UserID")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.OwnsOne("Backend.Models.Name", "FullName", b1 =>
                         {
                             b1.Property<int>("TeacherID")
@@ -797,8 +767,6 @@ namespace FirstProjectWithMVC.Migrations
                         .IsRequired();
 
                     b.Navigation("Manager");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Backend.Models.TeacherStudent", b =>
@@ -825,19 +793,19 @@ namespace FirstProjectWithMVC.Migrations
                     b.HasOne("Backend.Models.Student", "Student")
                         .WithMany("TeacherSubjectStudents")
                         .HasForeignKey("StudentID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Backend.Models.Subject", "Subject")
                         .WithMany("TeacherSubjectStudents")
                         .HasForeignKey("SubjectID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Backend.Models.Teacher", "Teacher")
                         .WithMany("TeacherSubjectStudents")
                         .HasForeignKey("TeacherID")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Student");
@@ -863,6 +831,8 @@ namespace FirstProjectWithMVC.Migrations
                     b.Navigation("Divisions");
 
                     b.Navigation("StudentClass");
+
+                    b.Navigation("Students");
 
                     b.Navigation("Subjects");
                 });
@@ -919,21 +889,6 @@ namespace FirstProjectWithMVC.Migrations
                     b.Navigation("TeacherStudents");
 
                     b.Navigation("TeacherSubjectStudents");
-                });
-
-            modelBuilder.Entity("Backend.Models.User", b =>
-                {
-                    b.Navigation("Guardian")
-                        .IsRequired();
-
-                    b.Navigation("Manager")
-                        .IsRequired();
-
-                    b.Navigation("Student")
-                        .IsRequired();
-
-                    b.Navigation("Teacher")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Backend.Models.Year", b =>
