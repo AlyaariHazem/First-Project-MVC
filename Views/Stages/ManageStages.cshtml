@@ -20,7 +20,8 @@
 
             <br />
 
-            <form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;">
+            <div id="contentStages">
+                <form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;">
                 <label for="termName" class="termName">اسـم المرحـلة</label><br>
                 <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
 
@@ -28,9 +29,8 @@
                 <input type="text" name="Note" class="class" placeholder="ملاحظة">
 
                 <input type="submit" class="btn btn-primary add" value="إضافة">
-            </form>
+                 </form>
 
-            <div id="contentStages">
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -150,6 +150,30 @@
 
 
             <div id="contentClasses" style="display: none;">
+            <form action="/Stages/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
+           <label for="termName" class="termName">اسـم المرحـلة</label><br>
+        
+                <select name="StageName" id="">
+                    @if (Model != null)
+                    {
+                       
+                        foreach (var stage in Model)
+                        {
+                            <option value="@stage.StageID">@stage.StageName</option>
+                        }
+                    }
+                    else
+                        {
+                            <option value="">لا يوجد مراحل حالياً</option>
+                        }
+                </select>
+                
+
+                <label for="class" class="className">اسم الصف</label>
+                <input type="text" name="ClassName" class="class" placeholder="إدخل اسم صف جديد">
+
+                <input type="submit" class="btn btn-primary add" value="إضافة">
+            </form>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -161,6 +185,22 @@
                             <th>الحالة</th>
                             <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
                         </tr>
+                         @if (Model != null)
+                        {
+                            int count = 1;
+                            foreach (var stage in Model)
+                            {
+                            <tr>
+                            <td>@count</td>
+                            <td>اسم الصف</td>
+                            <td>صفوف</td>
+                            <td>إجمالي الطلاب</td>
+                            <td>ملاحظة</td>
+                            <td>الحالة</td>
+                            <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
+                        </tr>
+                        }
+                        }
                     </thead>
                 </table>
             </div>

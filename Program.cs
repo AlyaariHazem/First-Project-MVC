@@ -10,7 +10,10 @@ namespace FirstProjectWithMVC
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews(
+                // conf=>conf.Filters.Add("", ""); //piple line Filter
+            );
+
             //connection with Database 
             builder.Services.AddDbContext<DataContext>(options=>
             {

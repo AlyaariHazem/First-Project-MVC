@@ -18,9 +18,9 @@ namespace FirstProjectWithMVC.Repository
             {
                 StageName = model.StageName,
                 Note = model.Note ?? string.Empty,
-                Active = true,
-                HireDate = DateTime.Now,
-                YearID = 1
+                Active = model.Active,
+                HireDate = model.HireDate,
+                YearID = model.YearID
             };
 
             context.Add(newStage);
@@ -70,5 +70,48 @@ namespace FirstProjectWithMVC.Repository
             return stages;
         }
 
+
+////////////////////////////////////////////          Divsions   and    Classes           //////////////////////////////////////////////////////////////////////////
+        public void Add(AddDivisionViewModel model)
+        {
+            Division newDivision = new Division
+            {
+                DivisionName = model.DivisionName,
+                // Note = model.Note ?? string.Empty,
+                // Active = model.Active,
+                // HireDate = model.HireDate,
+                // YearID = model.YearID
+            };
+
+            context.Add(newDivision);
+            Save();
+        }
+
+        public void Add(AddClassViewModel model)
+        {
+             Class newClass = new Class
+            {
+                ClassName = model.ClassName,
+                ClassYear = model.ClassYear,
+                StageID = model.StageID
+            };
+
+            context.Add(newClass);
+            Save();
+        }
+
+        public List<AddClassViewModel> DisplayClasses()
+        {
+            var Classes = context.Classes
+            .Select(Class => new AddClassViewModel
+            {
+                ClassID = Class.ClassID,
+                ClassName = Class.ClassName,
+                ClassYear = Class.ClassYear,
+                Divisions=Class.Divisions.ToList(),
+                StudentCount = Class.StudentClass.Count()
+            }).ToList();
+            return Classes;
+        }
     }
 }

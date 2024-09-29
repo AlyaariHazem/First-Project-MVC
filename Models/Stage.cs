@@ -10,10 +10,10 @@ namespace Backend.Models
     {
         public int StageID { get; set; }
         public string StageName { get; set; }
-        public string? Note { get; set; }
-        public bool Active { get; set; }
-        public DateTime HireDate { get; set; }
-        public int YearID { get; set; }
+        public string? Note { get; set; }="لا يوجد";
+        public bool Active { get; set; }=true;
+        public DateTime HireDate { get; set; }= DateTime.Now;
+        public int YearID { get; set; }=1;
         [JsonIgnore]
         public Year Year { get; set; }
         public virtual ICollection<Class> Classes { get; set; }
