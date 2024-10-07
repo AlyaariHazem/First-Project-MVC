@@ -1,5 +1,6 @@
 using FirstProjectWithMVC.Models;
 using FirstProjectWithMVC.Repository;
+using FirstProjectWithMVC.Repository.School;
 
 namespace FirstProjectWithMVC
 {
@@ -22,6 +23,7 @@ namespace FirstProjectWithMVC
             );
 
             builder.Services.AddScoped<IStagesRepository,StagesRepository>();
+            builder.Services.AddScoped<IClassesRepository,ClassesRepository>();
 
             var app = builder.Build();
 

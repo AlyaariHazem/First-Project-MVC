@@ -13,24 +13,19 @@ namespace FirstProjectWithMVC.Controllers.School
         public StagesController(IStagesRepository _stageRepo)
         {
             stageRepo = _stageRepo;
+            
         }
-        public IActionResult Index()
-        {
-            return View("ManageStages");
-        }
-
+       public IActionResult index(){
+        DisplayStagesInfo();
+           return View("ManageStages");
+       }
         public IActionResult DisplayStagesInfo()
         {
             List<StagesViewModel> stagesInfo = stageRepo.DisplayStages();
-            return View("ManageStages", stagesInfo); // Ensure you're passing the model to the view
+             return PartialView("~/Views/Stages/_StagePartial.cshtml", stagesInfo);
         }
 
-        public IActionResult Classes()
-        {
-            // How can I get classes data and pass to the view
-            return PartialView("ClassesTable");
-        }
-
+       
         [HttpPost]
         public IActionResult AddStage(AddStageViewModel model)
         {
@@ -40,7 +35,7 @@ namespace FirstProjectWithMVC.Controllers.School
                 return RedirectToAction("DisplayStagesInfo"); // Redirect to show the updated list
             }
 
-            return View("ManageStages", stageRepo.DisplayStages()); // Return the form with the current stages if invalid
+            return PartialView("~/Views/Stages/_StagePartial.cshtml", stageRepo.DisplayStages()); // Return the form with the current stages if invalid
         }
 
         [HttpPost]
@@ -56,24 +51,5 @@ namespace FirstProjectWithMVC.Controllers.School
 
             return Json(new { success = true, message = "تم الحذف بنجاح" });
         }
-
-        ////////////////////////////////////////////           Divsions   and    Classes           //////////////////////////////////////////////////////////////////////////
-        [HttpPost]
-        public IActionResult AddClass(AddClassViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                stageRepo.Add(model); // Add the new Class
-                return RedirectToAction("DisplayStagesInfo"); // Redirect to show the updated list
-            }
-
-            return View("ManageStages", stageRepo.DisplayClasses()); // Return the form with the current Classes if invalid
-        }
-        public IActionResult DisplayClassesInfo()
-        {
-            var ViewModels= stageRepo.DisplayClasses();
-            return View("ManageStages", ViewModels); // How can I sent this Data To 
-        }
-
     }
 }

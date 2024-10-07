@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj": {}
+    "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj": {
+    "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj",
+        "projectUniqueName": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj",
         "projectName": "FirstProjectWithMVC",
-        "projectPath": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj",
+        "projectPath": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\FirstProjectWithMVC.csproj",
         "packagesPath": "C:\\Users\\alyaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alyaa\\source\\repos\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\",
+        "outputPath": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alyaa\\AppData\\Roaming\\NuGet\\NuGet.Config",

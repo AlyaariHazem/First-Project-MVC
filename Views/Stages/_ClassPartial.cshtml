@@ -1,0 +1,71 @@
+<form action="/Classes/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
+    <label for="termName" class="termName">اسـم المرحـلة</label><br>
+
+    <select name="StageID" id="">
+        @if (Model != null)
+        {
+            foreach (var stage in Model)
+            {
+                <option value="@stage.StageID">@stage.StageName</option>
+            }
+        }
+        else
+        {
+            <option value="">لا يوجد مراحل حالياً</option>
+        }
+    </select>
+
+    <label for="class" class="className">اسم الصف</label>
+    <input type="text" required name="ClassName" class="class" placeholder="إدخل اسم صف جديد">
+
+    <input type="submit" class="btn btn-primary add" value="إضافة">
+</form>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>اسم الصف</th>
+            <th>الشعب</th>
+            <th>إجمالي الطلاب</th>
+            <th>ملاحظة</th>
+            <th>الحالة</th>
+            <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
+        </tr>
+    </thead>
+    @* <tbody>
+        @if (Model != null)
+        {
+            int count = 1;
+            foreach (var stage in Model)
+            {
+                <tr>
+                    <td>@count</td>
+                    <td>@stage.ClassName</td>
+                    <td>@stage.Divisions.Count()</td> <!-- Assuming you want to show count of divisions -->
+                    <td>@stage.StudentCount</td>
+                    <td>الحالة</td> <!-- Replace with actual state if available -->
+                    <td>
+                        <div class="col text-left">
+                            <div class="mt-sm-0 mt-2">
+                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <a class="dropdown-item" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+
+                                    <!-- AJAX delete trigger -->
+                                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteClass(@stage.ClassID)">
+                                        <i class="bi bi-trash IconDelete"></i> حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                count++;
+            }
+        }
+    </tbody> *@
+</table>

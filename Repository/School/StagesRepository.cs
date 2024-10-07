@@ -42,6 +42,7 @@ namespace FirstProjectWithMVC.Repository
 
         public List<Stage> GetAll()
         {
+
             return context.Stages.ToList();
         }
         public Stage GetById(int id)
@@ -64,54 +65,11 @@ namespace FirstProjectWithMVC.Repository
                 Classes = stage.Classes.ToList(),
                 Students = stage.Classes.SelectMany(c => c.StudentClass)
                                           .Select(sc => sc.Student)
-                                          .ToList(),
+                                          .ToList()!,
                 StudentCount = stage.Classes.SelectMany(c => c.StudentClass).Count()
             }).ToList();
             return stages;
         }
-
-
-////////////////////////////////////////////          Divsions   and    Classes           //////////////////////////////////////////////////////////////////////////
-        public void Add(AddDivisionViewModel model)
-        {
-            Division newDivision = new Division
-            {
-                DivisionName = model.DivisionName,
-                // Note = model.Note ?? string.Empty,
-                // Active = model.Active,
-                // HireDate = model.HireDate,
-                // YearID = model.YearID
-            };
-
-            context.Add(newDivision);
-            Save();
-        }
-
-        public void Add(AddClassViewModel model)
-        {
-             Class newClass = new Class
-            {
-                ClassName = model.ClassName,
-                ClassYear = model.ClassYear,
-                StageID = model.StageID
-            };
-
-            context.Add(newClass);
-            Save();
-        }
-
-        public List<AddClassViewModel> DisplayClasses()
-        {
-            var Classes = context.Classes
-            .Select(Class => new AddClassViewModel
-            {
-                ClassID = Class.ClassID,
-                ClassName = Class.ClassName,
-                ClassYear = Class.ClassYear,
-                Divisions=Class.Divisions.ToList(),
-                StudentCount = Class.StudentClass.Count()
-            }).ToList();
-            return Classes;
-        }
+       
     }
 }

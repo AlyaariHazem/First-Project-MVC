@@ -1,9 +1,9 @@
-﻿<div id="id01" class="">
+﻿s<div id="id01" class="">
     <div class="modal-content">
         <div class="container1" dir="rtl">
             <h2 class="school">تخصيص المدرسة</h2>
 
-            <button class="tab" onclick="TabContent('contentStages')" aria-controls="contentStages"
+            <button class="tab Clicked" onclick="TabContent('contentStages')" aria-controls="contentStages"
                 aria-expanded="true">
                 <span>المراحل</span>
             </button>
@@ -21,205 +21,24 @@
             <br />
 
             <div id="contentStages">
-                <form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;">
-                <label for="termName" class="termName">اسـم المرحـلة</label><br>
-                <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
-
-                <label for="note" class="className">ملاحظة</label>
-                <input type="text" name="Note" class="class" placeholder="ملاحظة">
-
-                <input type="submit" class="btn btn-primary add" value="إضافة">
-                 </form>
-
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>اسم المرحلة</th>
-                            <th>صفوف</th>
-                            <th>إجمالي الطلاب</th>
-                            <th>ملاحظة</th>
-                            <th>الحالة</th>
-                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @if (Model != null)
-                        {
-                            int count = 1;
-                            foreach (var stage in Model)
-                            {
-                                <tr>
-                                    <td>@count</td>
-                                    <td>@stage.StageName</td>
-                                    <td>
-                                        <!-- Button to toggle class dropdown -->
-                                        <div class="col text-left">
-                                            <div class="mt-sm-0 mt-2">
-                                                <button class="btn btn-left division" type="button" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    الصفوف @stage.Classes.Count <i class="bi bi-caret-down-fill"></i>
-                                                </button>
-                                                <!-- Dropdown for class list -->
-                                                <div class="dropdown-menu dropdown-menu-left">
-                                                    <table>
-                                                        <thead>
-                                                            <tr>
-                                                                <th>اسم الصف</th>
-                                                                <th>العملية</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            @foreach (var cls in stage.Classes)
-                                                            {
-                                                                <tr>
-                                                                    <td>@cls.ClassName</td>
-                                                                    <td>
-                                                                        <!-- Edit and Delete buttons for each class -->
-                                                                        <div class="col text-left class1">
-                                                                            <div class="mt-sm-0 mt-2">
-                                                                                <button class="btn btn-left" type="button"
-                                                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                                                    aria-expanded="false">
-                                                                                    <i class="fas fa-ellipsis-h"></i>
-                                                                                </button>
-                                                                                <div class="dropdown-menu dropdown-menu-left">
-                                                                                    <a class="dropdown-item" href="#"><i
-                                                                                            class="bi bi-pencil-square IconEdit"></i>
-                                                                                        تعديل</a>
-                                                                                    <div role="separator" class="dropdown-divider">
-                                                                                    </div>
-                                                                                    <a class="dropdown-item" href="#"><i
-                                                                                            class="bi bi-trash IconDelete"></i>
-                                                                                        حذف</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                            }
-                                                            @if (stage.Classes.Count == 0)
-                                                            {
-                                                                <tr>
-                                                                    <td colspan="2">لا يوجد صفوف يمكنك إضافة صفوف</td>
-                                                                </tr>
-                                                            }
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>@stage.StudentCount</td>
-                                    <td>@stage.Note</td>
-                                    <td>@(stage.Active ? "نشط" : "غير نشط")</td>
-                                    <td>
-                                        <div class="col text-left">
-                                            <div class="mt-sm-0 mt-2">
-                                                <button class="btn btn-left" type="button" data-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-h"></i>
-                                                </button>
-                                                <div class="dropdown-menu dropdown-menu-left">
-                                                    <a class="dropdown-item" href="#"><i
-                                                            class="bi bi-pencil-square IconEdit"></i> تعديل</a>
-                                                    <div role="separator" class="dropdown-divider"></div>
-
-                                                    <!-- AJAX delete trigger -->
-                                                    <a class="dropdown-item" href="javascript:void(0);"
-                                                        onclick="deleteStage(@stage.StageID)">
-                                                        <i class="bi bi-trash IconDelete"></i> حذف
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                count++;
-                            }
-                        }
-                        else
-                        {
-                            <tr>
-                                <td colspan="7">لا توجد بيانات لعرضها.</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
+                @* display the Classes table *@
+                @Html.Partial("_StagePartial.cshtml")
+                
             </div>
 
 
             <div id="contentClasses" style="display: none;">
-            <form action="/Stages/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
-           <label for="termName" class="termName">اسـم المرحـلة</label><br>
-        
-                <select name="StageName" id="">
-                    @if (Model != null)
-                    {
-                       
-                        foreach (var stage in Model)
-                        {
-                            <option value="@stage.StageID">@stage.StageName</option>
-                        }
-                    }
-                    else
-                        {
-                            <option value="">لا يوجد مراحل حالياً</option>
-                        }
-                </select>
-                
-
-                <label for="class" class="className">اسم الصف</label>
-                <input type="text" name="ClassName" class="class" placeholder="إدخل اسم صف جديد">
-
-                <input type="submit" class="btn btn-primary add" value="إضافة">
-            </form>
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>اسم الصف</th>
-                            <th>صفوف</th>
-                            <th>إجمالي الطلاب</th>
-                            <th>ملاحظة</th>
-                            <th>الحالة</th>
-                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
-                        </tr>
-                         @if (Model != null)
-                        {
-                            int count = 1;
-                            foreach (var stage in Model)
-                            {
-                            <tr>
-                            <td>@count</td>
-                            <td>اسم الصف</td>
-                            <td>صفوف</td>
-                            <td>إجمالي الطلاب</td>
-                            <td>ملاحظة</td>
-                            <td>الحالة</td>
-                            <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
-                        </tr>
-                        }
-                        }
-                    </thead>
-                </table>
+                @* display the Classes table *@
+                @Html.Partial("_ClassPartial.cshtml")
             </div>
 
+            @* display the divisions table *@
             <div id="contentDivisions" style="display: none;">
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>اسم الشعبة</th>
-                            <th>صفوف</th>
-                            <th>إجمالي الطلاب</th>
-                            <th>ملاحظة</th>
-                            <th>الحالة</th>
-                            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
-                        </tr>
-                    </thead>
-                </table>
+
+                @Html.Partial("_DivisionPartial.cshtml")
+
             </div>
+
         </div>
     </div>
 </div>
@@ -239,25 +58,50 @@
 </style>
 <script>
     function deleteStage(stageID) {
-    if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
+        if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
+            $.ajax({
+                url: '/Stages/DeleteStage',  // Use the correct URL here
+                type: 'POST',
+                data: { id: stageID }, // Send the ID as part of the request body
+                success: function (result) {
+                    alert('تم الحذف بنجاح');
+                    // Reload the page or dynamically update the table to reflect the deletion
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    alert('حدث خطأ أثناء الحذف: ' + error);
+                }
+            });
+        }
+    }
+
+    function deleteClass(id) {
         $.ajax({
-            url: '/Stages/DeleteStage',  // Use the correct URL here
+            url: '/Classes/DeleteClassByID',
             type: 'POST',
-            data: { id: stageID }, // Send the ID as part of the request body
-            success: function (result) {
-                alert('تم الحذف بنجاح');
-                // Reload the page or dynamically update the table to reflect the deletion
-                location.reload();
-            },
-            error: function (xhr, status, error) {
-                alert('حدث خطأ أثناء الحذف: ' + error);
+            data: { id: id },
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                    // Refresh or reload part of the page
+                } else {
+                    alert(response.message);
+                }
             }
         });
     }
-}
 
 </script>
+
 <script>
+    // Ensure the function runs automatically when the page loads
+    $(document).ready(function () {
+        // Set the default tab to "contentStages" on page load
+        TabContent('contentStages');
+        // Automatically call DisplayStagesInfo when the page loads
+        DisplayStagesInfo();
+    });
+
     function TabContent(tabClicked) {
         const tabs = ["contentStages", "contentClasses", "contentDivisions"];
 
@@ -270,17 +114,32 @@
                 tabElement.style.display = "block"; // Show the selected tab content
                 buttonElement.classList.add("tabChecked"); // Add active class to the button
                 buttonElement.setAttribute("aria-expanded", "true");
+
+                // Call DisplayStagesInfo when contentStages is clicked
+                if (tab === "contentStages") {
+                    DisplayStagesInfo();
+                }
             } else {
                 tabElement.style.display = "none"; // Hide other tab content
                 buttonElement.classList.remove("tabChecked"); // Remove active class from other buttons
                 buttonElement.setAttribute("aria-expanded", "false");
             }
         });
+    }
 
-        // Load content if not already loaded
-        if ($("#" + tabClicked).html().trim() === "") {
-            loadTabContent('/path-to-your-api/' + tabClicked, tabClicked);
-        }
+    // Function to fetch and display the stages info via AJAX
+    function DisplayStagesInfo() {
+        $.ajax({
+            url: '/Stages/DisplayStagesInfo', // Make sure this matches your controller's route
+            type: 'GET',
+            success: function (result) {
+                // Load the returned partial view into the contentStages div
+                $('#contentStages').html(result);
+            },
+            error: function (xhr, status, error) {
+                console.error('Error loading stages:', error);
+            }
+        });
     }
 
     function loadTabContent(url, targetId) {

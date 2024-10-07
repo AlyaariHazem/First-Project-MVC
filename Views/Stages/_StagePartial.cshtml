@@ -1,0 +1,124 @@
+@model List<FirstProjectWithMVC.ViewModels.StagesViewModel>
+
+<form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;">
+    <label for="termName" class="termName">اسـم المرحـلة</label><br>
+    <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
+
+    <label for="note" class="className">ملاحظة</label>
+    <input type="text" name="Note" class="class" placeholder="ملاحظة">
+
+    <input type="submit" class="btn btn-primary add" value="إضافة">
+</form>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>اسم المرحلة</th>
+            <th>صفوف</th>
+            <th>إجمالي الطلاب</th>
+            <th>ملاحظة</th>
+            <th>الحالة</th>
+            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            int count = 1;
+            foreach (var stage in Model)
+            {
+                <tr>
+                    <td>@count</td>
+                    <td>@stage.StageName</td>
+                    <td>
+                        <!-- Button to toggle class dropdown -->
+                        <div class="col text-left">
+                            <div class="mt-sm-0 mt-2">
+                                <button class="btn btn-left division" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    الصفوف @stage.Classes.Count <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <!-- Dropdown for class list -->
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>اسم الصف</th>
+                                                <th>العملية</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var cls in stage.Classes)
+                                            {
+                                                <tr>
+                                                    <td>@cls.ClassName</td>
+                                                    <td>
+                                                        <!-- Edit and Delete buttons for each class -->
+                                                        <div class="col text-left class1">
+                                                            <div class="mt-sm-0 mt-2">
+                                                                <button class="btn btn-left" type="button" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="fas fa-ellipsis-h"></i>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-left">
+                                                                    <a class="dropdown-item" href="#"><i
+                                                                            class="bi bi-pencil-square IconEdit"></i>
+                                                                        تعديل</a>
+                                                                    <div role="separator" class="dropdown-divider">
+                                                                    </div>
+                                                                    <a class="dropdown-item" href="#"><i
+                                                                            class="bi bi-trash IconDelete"></i>
+                                                                        حذف</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+                                            @if (stage.Classes.Count == 0)
+                                            {
+                                                <tr>
+                                                    <td colspan="2">لا يوجد صفوف يمكنك إضافة صفوف</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>@stage.StudentCount</td>
+                    <td>@stage.Note</td>
+                    <td>@(stage.Active ? "نشط" : "غير نشط")</td>
+                    <td>
+                        <div class="col text-left">
+                            <div class="mt-sm-0 mt-2">
+                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <a class="dropdown-item" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a>
+                                    <div role="separator" class="dropdown-divider"></div>
+
+                                    <!-- AJAX delete trigger -->
+                                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteStage(@stage.StageID)">
+                                        <i class="bi bi-trash IconDelete"></i> حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                count++;
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7">لا توجد بيانات لعرضها.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -17,63 +17,71 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FirstProjectWithMVC
 build_property.RootNamespace = FirstProjectWithMVC
-build_property.ProjectDir = C:\Users\alyaa\source\repos\FirstProjectWithMVC\FirstProjectWithMVC\
+build_property.ProjectDir = D:\MVC\FirstProjectWithMVC\FirstProjectWithMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\alyaa\source\repos\FirstProjectWithMVC\FirstProjectWithMVC
+build_property.MSBuildProjectDirectory = D:\MVC\FirstProjectWithMVC\FirstProjectWithMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Admin/Dashboard.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Dashboard/Dashboard.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Dashboard/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Index.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Privacy.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/Error.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/SideBar.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Header.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/ManageStages.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/ManageStages.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXE1hbmFnZVN0YWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/StagesTable.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXFN0YWdlc1RhYmxlLmNzaHRtbA==
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/_ClassPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXF9DbGFzc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewImports.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/_DivisionPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXF9EaXZpc2lvblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Stages/_StagePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZ2VzXF9TdGFnZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewStart.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/alyaa/source/repos/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Layout.cshtml]
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rvu9d14kda
