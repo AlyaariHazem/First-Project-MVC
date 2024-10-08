@@ -1,10 +1,16 @@
+@{
+    var classes = ViewBag.Classes as List<FirstProjectWithMVC.ViewModels.AddClassViewModel>;
+}
+@{
+    var Stages = ViewBag.StagesInfo as List<FirstProjectWithMVC.ViewModels.StagesViewModel>;
+}
 <form action="/Classes/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
     <label for="termName" class="termName">اسـم المرحـلة</label><br>
 
     <select name="StageID" id="">
-        @if (Model != null)
+        @if (Stages != null)
         {
-            foreach (var stage in Model)
+            foreach (var stage in Stages)
             {
                 <option value="@stage.StageID">@stage.StageName</option>
             }
@@ -32,11 +38,11 @@
             <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
         </tr>
     </thead>
-    @* <tbody>
-        @if (Model != null)
+    <tbody>
+        @if (classes != null)
         {
             int count = 1;
-            foreach (var stage in Model)
+            foreach (var stage in classes)
             {
                 <tr>
                     <td>@count</td>
@@ -67,5 +73,5 @@
                 count++;
             }
         }
-    </tbody> *@
+    </tbody>
 </table>

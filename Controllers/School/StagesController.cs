@@ -13,29 +13,37 @@ namespace FirstProjectWithMVC.Controllers.School
         public StagesController(IStagesRepository _stageRepo)
         {
             stageRepo = _stageRepo;
-            
+
         }
-       public IActionResult index(){
-        DisplayStagesInfo();
-           return View("ManageStages");
-       }
+        public IActionResult index()
+        {
+            DisplayStagesInfo();
+            return View("ManageStages");
+        }
         public IActionResult DisplayStagesInfo()
         {
-            List<StagesViewModel> stagesInfo = stageRepo.DisplayStages();
-             return PartialView("~/Views/Stages/_StagePartial.cshtml", stagesInfo);
+            List<StagesViewModel> stages = stageRepo.DisplayStages();
+            ViewBag.StagesInfo = stages;
+
+            return PartialView("~/Views/Stages/_StagePartial.cshtml");
         }
 
-       
+
         [HttpPost]
         public IActionResult AddStage(AddStageViewModel model)
         {
+
             if (ModelState.IsValid)
             {
                 stageRepo.Add(model); // Add the new stage
+
                 return RedirectToAction("DisplayStagesInfo"); // Redirect to show the updated list
             }
 
-            return PartialView("~/Views/Stages/_StagePartial.cshtml", stageRepo.DisplayStages()); // Return the form with the current stages if invalid
+            List<StagesViewModel> stages = stageRepo.DisplayStages();
+            ViewBag.StagesInfo = stages;
+
+            return View("ManageStages"); // Return the form with the current stages if invalid
         }
 
         [HttpPost]

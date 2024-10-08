@@ -24,14 +24,19 @@ namespace FirstProjectWithMVC.Controllers.School
                 classRepo.Add(model); // Add the new Class
                 return RedirectToAction("DisplayClassesInfo"); // Redirect to show the updated list
             }
-
-            return View("~/Views/Stages/_ClassPartial.cshtml", classRepo.DisplayClasses()); // Return the form with the current Classes if invalid
+            List<AddClassViewModel> viewModels = classRepo.DisplayClasses();
+            ViewBag.Classes = viewModels;
+            
+            return View("~/Views/Stages/ManageStages.cshtml");
         }
         public IActionResult DisplayClassesInfo()
         {
             List<AddClassViewModel> viewModels = classRepo.DisplayClasses();
-            return PartialView("~/Views/Stages/_ClassPartial.cshtml", viewModels);
+            ViewBag.Classes = viewModels;
+
+            return View("~/Views/Stages/ManageStages.cshtml");
         }
+
 
         [HttpPost]
         public IActionResult DeleteClassByID(int id)

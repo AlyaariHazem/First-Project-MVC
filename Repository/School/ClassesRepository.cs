@@ -22,8 +22,7 @@ public class ClassesRepository : IClassesRepository
         {
             ClassName = obj.ClassName,
             ClassYear = obj.ClassYear,
-            StageID = obj.StageID,
-            Divisions = obj.Divisions // Add if necessary
+            StageID = obj.StageID
         };
 
         context.Add(newClass);
@@ -64,7 +63,7 @@ public class ClassesRepository : IClassesRepository
                 ClassID = Class.ClassID,
                 ClassName = Class.ClassName,
                 ClassYear = Class.ClassYear,
-                Divisions = Class.Divisions != null ? Class.Divisions.ToList() : new List<Division>(), // Manual null check
+                Divisions = Class.Divisions.ToList(),
                 StudentCount = Class.StudentClass != null ? Class.StudentClass.Count() : 0 // Manual null check
             }).ToList();
 
