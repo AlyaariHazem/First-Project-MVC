@@ -2,6 +2,7 @@
 using Backend.Models;
 using FirstProjectWithMVC.Models;
 using FirstProjectWithMVC.Repository;
+using FirstProjectWithMVC.Repository.School;
 using FirstProjectWithMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,9 +11,11 @@ namespace FirstProjectWithMVC.Controllers.School
     public class StagesController : Controller
     {
         IStagesRepository stageRepo;
-        public StagesController(IStagesRepository _stageRepo)
+        IClassesRepository classRepo;
+        public StagesController(IStagesRepository _stageRepo, IClassesRepository _classRepo)
         {
             stageRepo = _stageRepo;
+            classRepo = _classRepo;
 
         }
         public IActionResult index()
@@ -24,6 +27,9 @@ namespace FirstProjectWithMVC.Controllers.School
         {
             List<StagesViewModel> stages = stageRepo.DisplayStages();
             ViewBag.StagesInfo = stages;
+            
+            List<AddClassViewModel> viewModels = classRepo.DisplayClasses();
+            ViewBag.Classes = viewModels;
 
             return PartialView("~/Views/Stages/_StagePartial.cshtml");
         }

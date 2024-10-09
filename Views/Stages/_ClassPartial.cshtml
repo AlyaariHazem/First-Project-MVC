@@ -42,13 +42,13 @@
         @if (classes != null)
         {
             int count = 1;
-            foreach (var stage in classes)
+            foreach (var Class in classes)
             {
                 <tr>
                     <td>@count</td>
-                    <td>@stage.ClassName</td>
-                    <td>@stage.Divisions.Count()</td> <!-- Assuming you want to show count of divisions -->
-                    <td>@stage.StudentCount</td>
+                    <td>@Class.ClassName</td>
+                    <td>@Class.Divisions.Count()</td> <!-- Assuming you want to show count of divisions -->
+                    <td>@Class.StudentCount</td>
                     <td>الحالة</td> <!-- Replace with actual state if available -->
                     <td>
                         <div class="col text-left">
@@ -62,7 +62,7 @@
                                     <div role="separator" class="dropdown-divider"></div>
 
                                     <!-- AJAX delete trigger -->
-                                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteClass(@stage.ClassID)">
+                                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteClass(@Class.ClassID)">
                                         <i class="bi bi-trash IconDelete"></i> حذف
                                     </a>
                                 </div>
@@ -75,3 +75,4 @@
         }
     </tbody>
 </table>
+

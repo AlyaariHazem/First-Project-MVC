@@ -48,7 +48,7 @@ namespace FirstProjectWithMVC.Controllers.School
             }
 
             classRepo.Delete(id);
-
+            DisplayClassesInfo();
             return Json(new { success = true, message = "تم الحذف بنجاح" });
         }
     }
