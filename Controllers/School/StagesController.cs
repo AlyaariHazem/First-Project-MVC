@@ -43,7 +43,7 @@ namespace FirstProjectWithMVC.Controllers.School
             {
                 stageRepo.Add(model); // Add the new stage
 
-                return RedirectToAction("DisplayStagesInfo"); // Redirect to show the updated list
+                return RedirectToAction("Index"); // Redirect to show the updated list
             }
 
             List<StagesViewModel> stages = stageRepo.DisplayStages();
@@ -63,7 +63,7 @@ namespace FirstProjectWithMVC.Controllers.School
 
             stageRepo.Delete(id);
 
-            return Json(new { success = true, message = "تم الحذف بنجاح" });
+            return Json(new { success = true, message = "" });
         }
     }
 }

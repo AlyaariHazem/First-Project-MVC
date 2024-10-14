@@ -13,6 +13,7 @@ namespace FirstProjectWithMVC.ViewModels
         public string ClassYear { get; set; }=Convert.ToString(DateTime.Now);
         public int StageID { get; set; }
         public int StudentCount { get; set; }
+        public virtual Stage Stage { get; set; } // Single Stage reference
         public virtual ICollection<Division> Divisions { get; set; } = new List<Division>();
         public virtual ICollection<Student> Students { get; set; } = new List<Student>();
     }

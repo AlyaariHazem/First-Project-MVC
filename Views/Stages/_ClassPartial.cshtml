@@ -31,9 +31,9 @@
         <tr>
             <th>#</th>
             <th>اسم الصف</th>
+            <th>المرحلة</th>
             <th>الشعب</th>
             <th>إجمالي الطلاب</th>
-            <th>ملاحظة</th>
             <th>الحالة</th>
             <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
         </tr>
@@ -47,7 +47,70 @@
                 <tr>
                     <td>@count</td>
                     <td>@Class.ClassName</td>
-                    <td>@Class.Divisions.Count()</td> <!-- Assuming you want to show count of divisions -->
+                    <td>@Class.Stage.StageName</td>
+                    <td>
+                        <!-- Button to toggle class dropdown -->
+                        <div class="col text-left">
+                            <div class="mt-sm-0 mt-2">
+                                <!-- First Dropdown Button for Divisions -->
+                                <button class="btn btn-left division" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    الشعب @Class.Divisions.Count <i class="bi bi-caret-down-fill"></i>
+                                </button>
+
+                                <!-- Dropdown for Division List -->
+                                <ul class="dropdown-menu">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>اسم الشُعبة</th>
+                                                <th>إجمالي الطلاب</th>
+                                                <th>العملية</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var division in Class.Divisions)
+                                            {
+                                                <tr>
+                                                    <td style="text-align: center;">@division.DivisionName</td>
+                                                    <td>لا يوجد طلاب حالياً</td>
+                                                    <td>
+                                                        <!-- Nested Dropdown Button for division actions -->
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-left" type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <i class="fas fa-ellipsis-h"></i>
+                                                            </button>
+
+                                                            <!-- Inner Dropdown Menu for division actions -->
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#"><i
+                                                                            class="bi bi-pencil-square IconEdit"></i> تعديل</a></li>
+                                                                <li>
+                                                                    <hr class="dropdown-divider">
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><i
+                                                                            class="bi bi-trash IconDelete"></i> حذف</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            }
+
+                                            @if (Class.Divisions.Count == 0)
+                                            {
+                                                <tr>
+                                                    <td colspan="3">لا يوجد شُعب يمكنك إضافة شُعب للفصل</td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </td>
                     <td>@Class.StudentCount</td>
                     <td>الحالة</td> <!-- Replace with actual state if available -->
                     <td>
@@ -75,4 +138,3 @@
         }
     </tbody>
 </table>
-

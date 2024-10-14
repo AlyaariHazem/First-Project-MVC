@@ -341,8 +341,8 @@
       "PackagePath": "staticwebassets\\js\\apexcharts.js"
     },
     {
-      "Id": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\app.js",
-      "PackagePath": "staticwebassets\\js\\app.js"
+      "Id": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\apps.js",
+      "PackagePath": "staticwebassets\\js\\apps.js"
     },
     {
       "Id": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\bootstrap.bundle.min.js",

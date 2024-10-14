@@ -1457,6 +1457,36 @@ label {
     -o-transform: rotate(90deg);
     transform: rotate(90deg)
 }
+.sidebar-menu .menu-arrow {
+    -webkit-transition: -webkit-transform .15s;
+    -o-transition: -o-transform .15s;
+    transition: transform .15s;
+    position: absolute;
+    left: 20px;
+    display: inline-block;
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    text-rendering: auto;
+    line-height: 40px;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.sidebar-menu .menu-arrow:before {
+    content: "\f105"
+}
+
+.sidebar-menu li a.subdrop .menu-arrow {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
 
 .noti-dot:before {
     content: '';

@@ -39,8 +39,7 @@
                         <!-- Button to toggle class dropdown -->
                         <div class="col text-left">
                             <div class="mt-sm-0 mt-2">
-                                <button class="btn btn-left division" type="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                <button class="btn btn-left division" type="button">
                                     الصفوف @stage.Classes.Count <i class="bi bi-caret-down-fill"></i>
                                 </button>
                                 <!-- Dropdown for class list -->
@@ -61,19 +60,17 @@
                                                         <!-- Edit and Delete buttons for each class -->
                                                         <div class="col text-left class1">
                                                             <div class="mt-sm-0 mt-2">
-                                                                <button class="btn btn-left" type="button" data-toggle="dropdown"
-                                                                    aria-haspopup="true" aria-expanded="false">
+                                                                <button class="btn btn-left class-dropdown" type="button">
                                                                     <i class="fas fa-ellipsis-h"></i>
                                                                 </button>
-                                                                <div class="dropdown-menu dropdown-menu-left">
-                                                                    <a class="dropdown-item" href="#"><i
-                                                                            class="bi bi-pencil-square IconEdit"></i>
-                                                                        تعديل</a>
-                                                                    <div role="separator" class="dropdown-divider">
-                                                                    </div>
-                                                                    <a class="dropdown-item" href="#"><i
-                                                                            class="bi bi-trash IconDelete"></i>
-                                                                        حذف</a>
+                                                                <div class="dropdown-menu class-options dropdown-menu-left">
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="bi bi-pencil-square IconEdit"></i> تعديل
+                                                                    </a>
+                                                                    <div role="separator" class="dropdown-divider"></div>
+                                                                    <a class="dropdown-item" href="#" onclick="deleteClassFromStage(@cls.ClassID)">
+                                                                        <i class="bi bi-trash IconDelete"></i> حذف
+                                                                    </a>
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -3,7 +3,7 @@
         <div class="container1" dir="rtl">
             <h2 class="school">تخصيص المدرسة</h2>
 
-            <button class="tab Clicked"  onclick="TabContent('contentStages')" aria-controls="contentStages"
+            <button class="tab  tabChecked" onclick="TabContent('contentStages')" aria-controls="contentStages"
                 aria-expanded="true">
                 <span>المراحل</span>
             </button>
@@ -17,13 +17,14 @@
                 aria-expanded="false">
                 <span>الشُـعـب</span>
             </button>
-            <span style="border-top:2px solid black;padding:0px 44%; position: relative; top: 1.5rem; left:11.4rem;"> </span>
+            <span style="border-top:2px solid black;padding:0px 44%; position: relative; top: 1.5rem; left:11.4rem;">
+            </span>
             <br />
 
             <div id="contentStages">
                 @* display the Classes table *@
                 @Html.Partial("_StagePartial.cshtml")
-                
+
             </div>
 
 
@@ -76,30 +77,68 @@
     }
 
     function deleteClass(id) {
-        $.ajax({
-            url: '/Classes/DeleteClassByID',
-            type: 'POST',
-            data: { id: id },
-            success: function (response) {
-                if (response.success) {
-                    alert(response.message);
-                    // Refresh or reload part of the page
-                } else {
-                    alert(response.message);
+        if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
+            $.ajax({
+                url: '/Classes/DeleteClassByID',
+                type: 'POST',
+                data: { id: id },
+                success: function (response) {
+                    if (response) {
+                        // Reload the contentClasses tab with the updated class and stage info
+                        loadTabContent('/Classes/DisplayClassesInfo', 'contentClasses');
+                    } else {
+                        alert('حدث خطأ أثناء الحذف');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('حدث خطأ أثناء الحذف: ' + error);
                 }
+            });
+        }
+    }
+    function deleteClassFromStage(id) {
+        if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
+            $.ajax({
+                url: '/Classes/DeleteClassByID',
+                type: 'POST',
+                data: { id: id },
+                success: function (result) {
+                    // Reload the page or dynamically update the table to reflect the deletion
+                    
+                },
+                error: function (xhr, status, error) {
+                    alert('حدث خطأ أثناء الحذف: ' + error);
+                }
+            });
+        }
+    }
+
+    // Function to close dropdown if clicked outside
+    document.addEventListener('click', function (event) {
+        var dropdowns = document.querySelectorAll('.dropdown-menu.show');
+        dropdowns.forEach(function (dropdown) {
+            // Check if the clicked element is inside the dropdown or button
+            if (!dropdown.contains(event.target) && !dropdown.previousElementSibling.contains(event.target)) {
+                dropdown.classList.remove('show');
             }
         });
-    }
+    });
+
+    // Manually toggle dropdown visibility on button click
+    document.querySelectorAll('.btn-left').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            var dropdownMenu = this.nextElementSibling;
+            dropdownMenu.classList.toggle('show');
+            e.stopPropagation(); // Prevent the click event from propagating upwards to the document listener
+        });
+    });
+
 
 </script>
 
 <script>
-    // Ensure the function runs automatically when the page loads
     $(document).ready(function () {
-        // Set the default tab to "contentStages" on page load
-        TabContent('contentStages');
-        // Automatically call DisplayStagesInfo when the page loads
-        DisplayStagesInfo();
+
     });
 
     function TabContent(tabClicked) {
@@ -141,7 +180,7 @@
             }
         });
     }
-    
+
     function loadTabContent(url, targetId) {
         $.ajax({
             url: url,

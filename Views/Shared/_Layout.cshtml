@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FirstProjectWithMVC</title>
-        @RenderSection("Styles", required: false) <!-- Add this line -->
+    <title>@ViewData["Title"] MySchool</title>
+    @RenderSection("Styles", required: false) <!-- Add this line -->
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -18,25 +19,29 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/FirstProjectWithMVC.styles.css" asp-append-version="true" />
     <style>
-        
         .menu-arrow {
-            font-family: 'FontAwesome'; /* Ensure you use the correct font */
-            display: inline-block; /* Necessary for the transform to work */
-            transform: rotate(180deg)!important;
+            font-family: 'FontAwesome';
+            /* Ensure you use the correct font */
+            display: inline-block;
+            /* Necessary for the transform to work */
+            transform: rotate(180deg) !important;
         }
 
-        .sidebar{
+        .sidebar {
             overflow-y: auto;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-x: hidden;
+            /* Prevent horizontal scrolling */
         }
-        
+
         .menu-arrow.rotate {
-            transform: rotate(90deg)!important; /* Rotate 90 degrees when active */
+            transform: rotate(90deg) !important;
+            /* Rotate 90 degrees when active */
         }
     </style>
 
 
 </head>
+
 <body>
     @Html.Partial("_Header") <!-- Include the header partial view here -->
     @Html.Partial("SideBar");
@@ -45,18 +50,21 @@
 
             @RenderBody()
 
-       </div>
-        
+        </div>
+
     </div>
 
     <script src="~/js/jquery-3.6.0.min.js"></script>
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/jquery.slimscroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/apps.js"></script>
     <script src="~/js/select2.min.js"></script>
     <script src="~/js/moment.min.js"></script>
     <script src="~/plugins/morris/morris.min.js"></script>
     <script src="~/plugins/raphael/raphael-min.js"></script>
-    @* <script src="~/js/app.js"></script> *@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZdMsZRNx6W/gdHaNFtbsO8cCHq4OYEmUEFWO++66D6g=",
+  "Hash": "Y7A6Qru1mOJLSBBN0qzfUX+6BUfq9enEHHJYaKm0p3w=",
   "Source": "FirstProjectWithMVC",
   "BasePath": "_content/FirstProjectWithMVC",
   "Mode": "Default",
@@ -1651,12 +1651,12 @@
       "OriginalItemSpec": "wwwroot\\js\\apexcharts.js"
     },
     {
-      "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\app.js",
+      "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\apps.js",
       "SourceId": "FirstProjectWithMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\",
       "BasePath": "_content/FirstProjectWithMVC",
-      "RelativePath": "js/app.js",
+      "RelativePath": "js/apps.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1667,7 +1667,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\app.js"
+      "OriginalItemSpec": "wwwroot\\js\\apps.js"
     },
     {
       "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\js\\bootstrap.bundle.min.js",
