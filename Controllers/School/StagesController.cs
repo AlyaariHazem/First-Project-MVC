@@ -27,7 +27,7 @@ namespace FirstProjectWithMVC.Controllers.School
         {
             List<StagesViewModel> stages = stageRepo.DisplayStages();
             ViewBag.StagesInfo = stages;
-            
+
             List<AddClassViewModel> viewModels = classRepo.DisplayClasses();
             ViewBag.Classes = viewModels;
 
@@ -51,6 +51,22 @@ namespace FirstProjectWithMVC.Controllers.School
 
             return View("ManageStages"); // Return the form with the current stages if invalid
         }
+
+        [HttpPost]
+        public IActionResult UpdateStage(AddStageViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                stageRepo.Update(model); // Ensure that the repo's Update method is called
+                return RedirectToAction("Index"); // Redirect after a successful update
+            }
+
+            List<StagesViewModel> stages = stageRepo.DisplayStages();
+            ViewBag.StagesInfo = stages;
+
+            return View("ManageStages"); // Return the form with the current stages if invalid
+        }
+
 
         [HttpPost]
         public IActionResult DeleteStage(int id)

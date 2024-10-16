@@ -38,6 +38,19 @@ namespace FirstProjectWithMVC.Repository.School
             }
         }
 
+        public void Update(AddClassViewModel model)
+        {
+            var existingClass = context.Classes.FirstOrDefault(c => c.ClassID == model.ClassID); // Fetch the class by ID
+            if (existingClass != null)
+            {
+                existingClass.ClassName = model.ClassName;
+                existingClass.StageID = model.StageID; // Update the StageID if needed
+
+                context.Entry(existingClass).State = EntityState.Modified; // Mark entity as modified
+                context.SaveChanges();
+            }
+        }
+
         public void Delete(int id)
         {
             var existingClass = GetById(id);
@@ -58,18 +71,6 @@ namespace FirstProjectWithMVC.Repository.School
             return context.Classes.FirstOrDefault(c => c.ClassID == id);
         }
 
-        public void Update(Class entity)
-        {
-            var existingClass = GetById(entity.ClassID);
-            if (existingClass != null)
-            {
-                existingClass.ClassName = entity.ClassName;
-                existingClass.ClassYear = entity.ClassYear;
-                existingClass.StageID = entity.StageID;
-                // Update other properties as needed
-                context.SaveChanges();
-            }
-        }
 
         public List<AddClassViewModel> DisplayClasses()
         {

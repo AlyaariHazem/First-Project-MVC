@@ -4,14 +4,16 @@
 
 @model List<FirstProjectWithMVC.ViewModels.StagesViewModel>
 
-<form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;">
+<form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;" id="stageForm">
+    <input type="hidden" name="ID" value="" /> <!-- Hidden input to store StageID -->
+    
     <label for="termName" class="termName">اسـم المرحـلة</label><br>
     <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
 
     <label for="note" class="className">ملاحظة</label>
     <input type="text" name="Note" class="class" placeholder="ملاحظة">
 
-    <input type="submit" class="btn btn-primary add" value="إضافة">
+    <input type="submit" class="btn btn-primary add" value="إضافة" id="submitButton"> <!-- Button to change dynamically -->
 </form>
 
 <table class="styled-table">
@@ -64,7 +66,7 @@
                                                                     <i class="fas fa-ellipsis-h"></i>
                                                                 </button>
                                                                 <div class="dropdown-menu class-options dropdown-menu-left">
-                                                                    <a class="dropdown-item" href="#">
+                                                                    <a class="dropdown-item" href="#" onclick="editStage(@stage.StageID, '@stage.StageName', '@stage.Note')">
                                                                         <i class="bi bi-pencil-square IconEdit"></i> تعديل
                                                                     </a>
                                                                     <div role="separator" class="dropdown-divider"></div>
@@ -95,15 +97,14 @@
                     <td>
                         <div class="col text-left">
                             <div class="mt-sm-0 mt-2">
-                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-ellipsis-h"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-left">
-                                    <a class="dropdown-item" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a>
+                                    <a class="dropdown-item" href="#" onclick="editStage(@stage.StageID, '@stage.StageName', '@stage.Note')">
+                                        <i class="bi bi-pencil-square IconEdit"></i> تعديل
+                                    </a>
                                     <div role="separator" class="dropdown-divider"></div>
-
-                                    <!-- AJAX delete trigger -->
                                     <a class="dropdown-item" href="javascript:void(0);" onclick="deleteStage(@stage.StageID)">
                                         <i class="bi bi-trash IconDelete"></i> حذف
                                     </a>

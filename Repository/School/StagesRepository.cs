@@ -26,10 +26,22 @@ namespace FirstProjectWithMVC.Repository
             context.Add(newStage);
             Save();
         }
-        public void Update(Stage obj)
+
+        public void Update(AddStageViewModel model)
         {
-            context.Update(obj);
+            var existingStage = context.Stages.FirstOrDefault(s => s.StageID == model.ID);
+            if (existingStage != null)
+            {
+                existingStage.StageName = model.StageName;
+                existingStage.Note = model.Note ?? string.Empty;
+
+                context.Entry(existingStage).State = EntityState.Modified; // Mark the entity as modified
+                Save(); // Save changes
+            }
         }
+
+
+
         public void Delete(int id)
         {
             var stage = GetById(id); // Fetch the stage by ID
@@ -70,6 +82,6 @@ namespace FirstProjectWithMVC.Repository
             }).ToList();
             return stages;
         }
-       
+
     }
 }

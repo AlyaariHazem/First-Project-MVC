@@ -58,6 +58,29 @@
     }
 </style>
 <script>
+    // JavaScript to reset the form and button after submission
+    document.getElementById('classForm').addEventListener('submit', function () {
+        setTimeout(function () {
+            resetForm(); // Reset the form after the submission is complete
+        }, 500); // Small delay to allow submission
+    });
+    function resetForm() {
+        document.querySelector('input[name="ClassID"]').value = ''; // Reset ClassID
+        document.querySelector('input[name="ClassName"]').value = ''; // Reset ClassName
+        document.querySelector('select[name="StageID"]').selectedIndex = 0; // Reset StageID to default option
+        document.getElementById('submitButton').value = 'إضافة'; // Reset button label to "إضافة"
+        document.getElementById('classForm').action = '/Classes/AddClass'; // Reset form action to "Add"
+    }
+
+    function editStage(id, stageName, note) {
+        document.querySelector('input[name="StageName"]').value = stageName;
+        document.querySelector('input[name="Note"]').value = note;
+        document.querySelector('input[name="ID"]').value = id; // Ensure this matches your model property
+        const form = document.getElementById('stageForm');
+        form.action = '/Stages/UpdateStage';
+        document.getElementById('submitButton').value = 'تحديث';
+    }
+
     function deleteStage(stageID) {
         if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
             $.ajax({
@@ -75,6 +98,31 @@
             });
         }
     }
+    // Reset form for adding a new class
+    function resetForm() {
+        document.querySelector('input[name="ClassID"]').value = ''; // Reset ClassID
+        document.querySelector('input[name="ClassName"]').value = ''; // Reset ClassName
+        document.querySelector('select[name="StageID"]').selectedIndex = 0; // Reset StageID dropdown
+        document.getElementById('submitButtonClass').value = 'إضافة'; // Reset button text to "إضافة"
+        document.getElementById('classForm').action = '/Classes/AddClass'; // Reset form action to Add
+    }
+
+    // Edit a class (populate form and change action to update)
+    function editClass(id, className, stageId) {
+        document.querySelector('input[name="ClassID"]').value = id; // Set ClassID for editing
+        document.querySelector('input[name="ClassName"]').value = className; // Set ClassName
+        document.querySelector('select[name="StageID"]').value = stageId; // Set StageID in the dropdown
+        document.getElementById('submitButtonClass').value = 'تحديث'; // Change button text to "تحديث"
+        document.getElementById('classForm').action = '/Classes/UpdateClass'; // Change form action to update
+    }
+    // Call this function after submission to reset the form
+    document.getElementById('classForm').addEventListener('submit', function () {
+        setTimeout(function () {
+            resetForm(); // Reset the form after submission
+        }, 500); // Add a small delay to allow submission
+    });
+
+
 
     function deleteClass(id) {
         if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
@@ -104,7 +152,7 @@
                 data: { id: id },
                 success: function (result) {
                     // Reload the page or dynamically update the table to reflect the deletion
-                    
+
                 },
                 error: function (xhr, status, error) {
                     alert('حدث خطأ أثناء الحذف: ' + error);

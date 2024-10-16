@@ -1,16 +1,17 @@
 @{
     var classes = ViewBag.Classes as List<FirstProjectWithMVC.ViewModels.AddClassViewModel>;
+    var stages = ViewBag.StagesInfo as List<FirstProjectWithMVC.ViewModels.StagesViewModel>;
 }
-@{
-    var Stages = ViewBag.StagesInfo as List<FirstProjectWithMVC.ViewModels.StagesViewModel>;
-}
-<form action="/Classes/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
-    <label for="termName" class="termName">اسـم المرحـلة</label><br>
 
-    <select name="StageID" id="">
-        @if (Stages != null)
+<!-- Class Form -->
+<form id="classForm" action="/Classes/AddClass" method="post" style="margin-right:2rem;margin-top:30px;">
+    <input type="hidden" name="ClassID" value="" /> <!-- Hidden input to store ClassID -->
+
+    <label for="termName" class="termName">اسـم المرحـلة</label><br>
+    <select name="StageID" id="StageID">
+        @if (stages != null)
         {
-            foreach (var stage in Stages)
+            foreach (var stage in stages)
             {
                 <option value="@stage.StageID">@stage.StageName</option>
             }
@@ -24,8 +25,10 @@
     <label for="class" class="className">اسم الصف</label>
     <input type="text" required name="ClassName" class="class" placeholder="إدخل اسم صف جديد">
 
-    <input type="submit" class="btn btn-primary add" value="إضافة">
+    <input type="submit" id="submitButtonClass" class="btn btn-primary add" value="إضافة">
 </form>
+
+<!-- Class Table -->
 <table class="styled-table">
     <thead>
         <tr>
@@ -35,7 +38,7 @@
             <th>الشعب</th>
             <th>إجمالي الطلاب</th>
             <th>الحالة</th>
-            <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
+            <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
         </tr>
     </thead>
     <tbody>
@@ -49,87 +52,61 @@
                     <td>@Class.ClassName</td>
                     <td>@Class.Stage.StageName</td>
                     <td>
-                        <!-- Button to toggle class dropdown -->
-                        <div class="col text-left">
-                            <div class="mt-sm-0 mt-2">
-                                <!-- First Dropdown Button for Divisions -->
-                                <button class="btn btn-left division" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    الشعب @Class.Divisions.Count <i class="bi bi-caret-down-fill"></i>
-                                </button>
-
-                                <!-- Dropdown for Division List -->
-                                <ul class="dropdown-menu">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>اسم الشُعبة</th>
-                                                <th>إجمالي الطلاب</th>
-                                                <th>العملية</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @foreach (var division in Class.Divisions)
-                                            {
-                                                <tr>
-                                                    <td style="text-align: center;">@division.DivisionName</td>
-                                                    <td>لا يوجد طلاب حالياً</td>
-                                                    <td>
-                                                        <!-- Nested Dropdown Button for division actions -->
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-left" type="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                <i class="fas fa-ellipsis-h"></i>
-                                                            </button>
-
-                                                            <!-- Inner Dropdown Menu for division actions -->
-                                                            <ul class="dropdown-menu">
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="bi bi-pencil-square IconEdit"></i> تعديل</a></li>
-                                                                <li>
-                                                                    <hr class="dropdown-divider">
-                                                                </li>
-                                                                <li><a class="dropdown-item" href="#"><i
-                                                                            class="bi bi-trash IconDelete"></i> حذف</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            }
-
-                                            @if (Class.Divisions.Count == 0)
-                                            {
-                                                <tr>
-                                                    <td colspan="3">لا يوجد شُعب يمكنك إضافة شُعب للفصل</td>
-                                                </tr>
-                                            }
-                                        </tbody>
-                                    </table>
-                                </ul>
-
-                            </div>
-                        </div>
-
+                        <button class="btn btn-left division" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            الشعب @Class.Divisions.Count <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <!-- Display Divisions -->
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>اسم الشُعبة</th>
+                                        <th>إجمالي الطلاب</th>
+                                        <th>العملية</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var division in Class.Divisions)
+                                    {
+                                        <tr>
+                                            <td style="text-align: center;">@division.DivisionName</td>
+                                            <td>لا يوجد طلاب حالياً</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-left" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-h"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a></li>
+                                                        <li><hr class="dropdown-divider"></li>
+                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash IconDelete"></i> حذف</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                    @if (Class.Divisions.Count == 0)
+                                    {
+                                        <tr>
+                                            <td colspan="3">لا يوجد شُعب يمكنك إضافة شُعب للفصل</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </ul>
                     </td>
                     <td>@Class.StudentCount</td>
-                    <td>الحالة</td> <!-- Replace with actual state if available -->
+                    <td>الحالة</td>
                     <td>
-                        <div class="col text-left">
-                            <div class="mt-sm-0 mt-2">
-                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-left">
-                                    <a class="dropdown-item" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a>
-                                    <div role="separator" class="dropdown-divider"></div>
-
-                                    <!-- AJAX delete trigger -->
-                                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteClass(@Class.ClassID)">
-                                        <i class="bi bi-trash IconDelete"></i> حذف
-                                    </a>
-                                </div>
-                            </div>
+                        <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left">
+                            <a class="dropdown-item" onclick="editClass(@Class.ClassID, '@Class.ClassName', @Class.StageID)" href="#"><i class="bi bi-pencil-square IconEdit"></i> تعديل</a>
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="javascript:void(0);" onclick="deleteClass(@Class.ClassID)">
+                                <i class="bi bi-trash IconDelete"></i> حذف
+                            </a>
                         </div>
                     </td>
                 </tr>

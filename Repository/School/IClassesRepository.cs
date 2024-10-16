@@ -10,6 +10,7 @@ namespace FirstProjectWithMVC.Repository.School
     public interface IClassesRepository:IgenericRepository<Class>
     {
         public void Add(AddClassViewModel obj);
+        public void Update(AddClassViewModel obj);
         public List<AddClassViewModel> DisplayClasses();
     }
 }

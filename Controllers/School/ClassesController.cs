@@ -12,7 +12,7 @@ namespace FirstProjectWithMVC.Controllers.School
     {
         IClassesRepository classRepo;
         IStagesRepository stageRepo;
-        public ClassesController(IClassesRepository _classRepo,IStagesRepository _stageRepo)
+        public ClassesController(IClassesRepository _classRepo, IStagesRepository _stageRepo)
         {
             classRepo = _classRepo;
             stageRepo = _stageRepo;
@@ -21,9 +21,9 @@ namespace FirstProjectWithMVC.Controllers.School
         [HttpPost]
         public IActionResult AddClass(AddClassViewModel model)
         {
-            
-                classRepo.Add(model); // Add the new Class
-            
+
+            classRepo.Add(model); // Add the new Class
+
 
             // If the model state is invalid, load classes and stages again
             List<AddClassViewModel> viewModels = classRepo.DisplayClasses();
@@ -31,11 +31,22 @@ namespace FirstProjectWithMVC.Controllers.School
 
             ViewBag.Classes = viewModels;
             ViewBag.StagesInfo = stages; // Pass stages to the view
-                return RedirectToAction("index", "Stages"); // Redirect to the stages index to see the updated list
+            return RedirectToAction("index", "Stages"); // Redirect to the stages index to see the updated list
 
         }
 
+        [HttpPost]
+        public IActionResult UpdateClass(AddClassViewModel model)
+        {
+            
+                classRepo.Update(model);
+            
 
+            List<StagesViewModel> stages = stageRepo.DisplayStages();
+            ViewBag.StagesInfo = stages;
+
+            return RedirectToAction("index", "Stages"); // Redirect to the stages index to see the updated list
+        }
 
         public IActionResult DisplayClassesInfo()
         {
