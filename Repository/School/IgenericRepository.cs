@@ -9,7 +9,7 @@ namespace FirstProjectWithMVC.Repository
     {
         void Delete(int id);
         T GetById(int id);
-        List<T> GetAll();
+        
     }
    
 }

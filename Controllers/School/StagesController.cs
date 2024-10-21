@@ -12,15 +12,26 @@ namespace FirstProjectWithMVC.Controllers.School
     {
         IStagesRepository stageRepo;
         IClassesRepository classRepo;
-        public StagesController(IStagesRepository _stageRepo, IClassesRepository _classRepo)
+        IDivisionRepository divisionRepo;
+        
+        public StagesController(IStagesRepository _stageRepo, IClassesRepository _classRepo,IDivisionRepository _divisionRepo)
         {
             stageRepo = _stageRepo;
             classRepo = _classRepo;
+            divisionRepo = _divisionRepo;
+        }
+        public IActionResult DisplayDivisioinInfo()
 
+        {
+            List<DivisionViewModel> divisions = divisionRepo.DisplayDivisiones();
+            ViewBag.DivisionInfo = divisions;
+
+            return PartialView("~/Views/Stages/_DivisionPartial.cshtml");
         }
         public IActionResult index()
         {
             DisplayStagesInfo();
+            DisplayDivisioinInfo();
             return View("ManageStages");
         }
         public IActionResult DisplayStagesInfo()

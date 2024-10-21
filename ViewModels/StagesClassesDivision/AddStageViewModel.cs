@@ -7,7 +7,7 @@ namespace FirstProjectWithMVC.ViewModels
 {
     public class AddStageViewModel
     {
-        public int ID { get; set;}
+        public int? ID { get; set;}
         public string? StageName { get; set; }
         public string? Note { get; set; }="لا يوجد";
         public bool Active { get; set; }=true;

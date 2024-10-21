@@ -24,6 +24,8 @@ namespace FirstProjectWithMVC
 
             builder.Services.AddScoped<IStagesRepository,StagesRepository>();
             builder.Services.AddScoped<IClassesRepository,ClassesRepository>();
+            builder.Services.AddScoped<IDivisionRepository, DivisionRepository>();
+
 
             var app = builder.Build();
 

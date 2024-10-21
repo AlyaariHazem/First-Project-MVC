@@ -1,13 +1,45 @@
-﻿<table class="styled-table">
+﻿@{
+    var Divisions = ViewBag.DivisionInfo as List<FirstProjectWithMVC.ViewModels.DivisionViewModel>;
+}
+<form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;" id="stageForm">
+    <input type="hidden" name="ID" value="" /> <!-- Hidden input to store StageID -->
+
+    <label for="termName" class="termName">اسـم المرحـلة</label><br>
+    <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
+
+    <label for="note" class="className">ملاحظة</label>
+    <input type="text" name="Note" class="class" placeholder="ملاحظة">
+
+    <input type="submit" class="btn btn-primary add" value="إضافة" id="submitButton">
+    <!-- Button to change dynamically -->
+</form>
+
+<table class="styled-table">
     <thead>
         <tr>
             <th>#</th>
             <th>اسم الشعبة</th>
             <th>صفوف</th>
             <th>إجمالي الطلاب</th>
-            <th>ملاحظة</th>
             <th>الحالة</th>
             <th style="padding-left: 33px; padding-right: 33px;">العملية</th>
         </tr>
     </thead>
+    <tbody>
+        @if (Divisions != null)
+        {
+            int count = 1;
+            @foreach (var division in Divisions)
+            {
+                <tr>
+                    <td>@count</td>
+                    <td>@division.DivisionName</td>
+                    <td>@division.ClassesName</td>
+                    <td>@division.StudentCount</td>
+                    <td>@division.Active</td>
+                    <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
+                </tr>
+            }
+        }
+    </tbody>
 </table>

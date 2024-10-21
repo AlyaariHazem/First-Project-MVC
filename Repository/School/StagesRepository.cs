@@ -52,14 +52,9 @@ namespace FirstProjectWithMVC.Repository
             }
         }
 
-        public List<Stage> GetAll()
-        {
-
-            return context.Stages.ToList();
-        }
         public Stage GetById(int id)
         {
-            return context.Stages.FirstOrDefault(S => S.StageID == id);
+            return context.Stages.FirstOrDefault(S => S.StageID == id)!;
         }
         public void Save()
         {
