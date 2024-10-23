@@ -1,18 +1,31 @@
 ﻿@{
     var Divisions = ViewBag.DivisionInfo as List<FirstProjectWithMVC.ViewModels.DivisionViewModel>;
+    var classes = ViewBag.ClassesInfo as List<FirstProjectWithMVC.ViewModels.AddClassViewModel>;
 }
-<form action="/Stages/AddStage" method="post" style="margin-right:2rem;margin-top:30px;" id="stageForm">
-    <input type="hidden" name="ID" value="" /> <!-- Hidden input to store StageID -->
+<form id="DivisionForm" action="/Division/AddDivision" method="post" style="margin-right:2rem;margin-top:30px;">
+    <input type="hidden" name="DivisionID" value="" /> <!-- Hidden input to store ClassID -->
 
     <label for="termName" class="termName">اسـم المرحـلة</label><br>
-    <input type="text" name="StageName" class="term" placeholder="المرحـلة" required>
+    <select name="ClassID" id="StageID">
+        @if (classes != null)
+        {
+            foreach (var Class in classes)
+            {
+                <option value="@Class.ClassID">@Class.ClassName</option>
+            }
+        }
+        else
+        {
+            <option value="">لا يوجد مراحل حالياً</option>
+        }
+    </select>
 
-    <label for="note" class="className">ملاحظة</label>
-    <input type="text" name="Note" class="class" placeholder="ملاحظة">
+    <label for="class" class="className">اسم الصف</label>
+    <input type="text" required name="DivisionName" class="class" placeholder="إدخل اسم صف جديد">
 
-    <input type="submit" class="btn btn-primary add" value="إضافة" id="submitButton">
-    <!-- Button to change dynamically -->
+    <input type="submit" id="submitButtonDivision" class="btn btn-primary add" value="إضافة">
 </form>
+
 
 <table class="styled-table">
     <thead>
@@ -36,10 +49,123 @@
                     <td>@division.DivisionName</td>
                     <td>@division.ClassesName</td>
                     <td>@division.StudentCount</td>
-                    <td>@division.Active</td>
-                    <td style="padding-left: 33px; padding-right: 33px;">العملية</td>
+                    <td class="dropdown1">
+                        @if (division.Active)
+                        {
+                            <span class="dropdown-toggle" data-toggle="dropdown">نشط</span>
+                        }
+                        else
+                        {
+                            <span class="dropdown-toggle" data-toggle="dropdown">خامل</span>
+                        }
+
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item" onclick="changeState('@division.DivisionID', true)">نشط</span>
+                            <span class="dropdown-item" onclick="changeState('@division.DivisionID', false)">خامل</span>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="col text-left">
+                            <div class="mt-sm-0 mt-2">
+                                <button class="btn btn-left" type="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-left">
+                                    <a class="dropdown-item" href="#"
+                                        onclick="editDivision(@division.DivisionID, '@division.DivisionName', '@division.ClassID')"
+                                        >
+                                        <i class="bi bi-pencil-square IconEdit"></i> تعديل
+                                    </a>
+                                    <div role="separator" class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0);"
+                                        onclick="deleteDivision(@division.DivisionID)">
+                                        <i class="bi bi-trash IconDelete"></i> حذف
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
                 </tr>
             }
         }
     </tbody>
 </table>
+<style>
+    .dropdown-toggle {
+        border: 2px solid rgb(8, 197, 8);
+        position: relative;
+        top: 3px;
+        padding: 3% 15%;
+        left: 5%;
+        right: 5%;
+        width: 89%;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .dropdown-toggle:hover {
+        border: 2px solid #34d589;
+    }
+</style>
+<script>
+    function changeState(divId, newState) {
+        $.ajax({
+            url: '/Division/ChangeState',
+            type: 'POST',
+            data: { id: divId, state: newState },
+            success: function (response) {
+                // Handle success (e.g., reload the page or update the UI)
+                loadTabContent('/Classes/DisplayDivisioinInfo', 'contentDivisions');
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    }
+    function deleteDivision(id) {
+        if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
+            $.ajax({
+                url: '/Division/DeleteDivisionByID',
+                type: 'POST',
+                data: { id: id },
+                success: function (response) {
+                    if (response) {
+                        // Reload the contentClasses tab with the updated class and stage info
+                        loadTabContent('/Division/DeleteDivisionByID', 'contentDivisions');
+                    } else {
+                        alert('حدث خطأ أثناء الحذف');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('حدث خطأ أثناء الحذف: ' + error);
+                }
+            });
+        }
+    }
+    // Reset form for adding a new Division
+    function resetForm() {
+        document.querySelector('input[name="DivisionID"]').value = ''; // Reset ClassID
+        document.querySelector('input[name="DivisionName"]').value = ''; // Reset ClassName
+        document.querySelector('select[name="ClassID"]').selectedIndex = 0; // Reset StageID dropdown
+        document.getElementById('submitButtonDivision').value = 'إضافة'; // Reset button text to "إضافة"
+        document.getElementById('DivisionForm').action = '/Division/AddDivision'; // Reset form action to Add
+    }
+
+    // Edit a class (populate form and change action to update)
+    function editDivision(id, DivisionName, ClassId) {
+        document.querySelector('input[name="DivisionID"]').value = id; // Set ClassID for editing
+        document.querySelector('input[name="DivisionName"]').value = DivisionName; // Set DivisionName
+        document.querySelector('select[name="ClassID"]').value = ClassId; // Set ClassId in the dropdown
+        document.getElementById('submitButtonDivision').value = 'تحديث'; // Change button text to "تحديث"
+        document.getElementById('DivisionForm').action = '/Division/UpdateDivision'; // Change form action to update
+    }
+
+    // Call this function after submission to reset the form
+    document.getElementById('DivisionForm').addEventListener('submit', function () {
+        setTimeout(function () {
+            resetForm(); // Reset the form after submission
+        }, 500); // Add a small delay to allow submission
+    });
+</script>

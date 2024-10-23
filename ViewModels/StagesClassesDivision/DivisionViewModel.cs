@@ -13,7 +13,7 @@ namespace FirstProjectWithMVC.ViewModels
         public bool Active { get; set; } = true;
         public int ClassID { get; set; } = 1;
         public string? ClassesName { get; set; } // Change type to string to hold class name
-        public int StudentCount { get; set; } // New property to hold the student count
+        public int? StudentCount { get; set; } // New property to hold the student count
     }
 
 }

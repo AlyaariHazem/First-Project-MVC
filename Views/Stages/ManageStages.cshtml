@@ -140,6 +140,7 @@
             });
         }
     }
+    
     function deleteClassFromStage(id) {
         if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
             $.ajax({
@@ -230,12 +231,10 @@
     }
 
     function loadTabContent(url, targetId) {
-    console.log("Loading content from", url);  // Debug line
     $.ajax({
         url: url,
         method: 'GET',
         success: function (data) {
-            console.log("Data received:", data);  // Debug line
             $("#" + targetId).html(data);
         },
         error: function (err) {

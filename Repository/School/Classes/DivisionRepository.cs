@@ -17,6 +17,37 @@ namespace FirstProjectWithMVC.Repository.School
             context = _context;
 
         }
+        public void Add(DivisionViewModel obj)
+        {
+            Division newClass = new Division
+            {
+                DivisionName = obj.DivisionName,
+                ClassID = obj.ClassID
+            };
+
+            try
+            {
+                context.Divisions.Add(newClass);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (you can use any logging library here)
+                Console.WriteLine($"Error adding class: {ex.Message}");
+                throw; // Re-throw or handle as needed
+            }
+        }
+        public void ChangeState(int id, bool state)
+        {
+            var existingDivision = GetById(id);  // Fetch the division by its ID
+            if (existingDivision != null)
+            {
+                existingDivision.Active = state;  // Update the Active property
+                context.SaveChanges();            // Save changes to the database
+            }
+        }
+
+
         public void Delete(int id)
         {
             var existingDivision = GetById(id);
@@ -50,6 +81,18 @@ namespace FirstProjectWithMVC.Repository.School
         {
 
             return context.Divisions.FirstOrDefault(d => d.DivisionID == id)!;
+        }
+
+        public void Update(DivisionViewModel model)
+        {
+            var existingDivision = context.Divisions.FirstOrDefault(d => d.DivisionID == model.DivisionID);
+            if (existingDivision != null)
+            {
+                existingDivision.DivisionName = model.DivisionName;
+                existingDivision.ClassID = model.ClassID;
+                
+                context.SaveChanges();
+            }
         }
     }
 }
