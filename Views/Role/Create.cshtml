@@ -1,0 +1,73 @@
+@model FirstProjectWithMVC.ViewModels.RoleViewModel
+
+@{
+    ViewData["Title"] = "Create Role";
+}
+
+
+<form class="Fregister" asp-action="SaveRole" method="post">
+    <h3 style="text-align: center;">Create Role</h3>
+    <div class="form-group">
+        <label asp-for="RoleName" class="control-label"></label>
+        <input asp-for="RoleName" class="form-control" />
+        <span asp-validation-for="RoleName" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+<style>
+    .Fregister {
+        max-width: 600px;
+        margin: 5% auto;
+        /* Center the form on the page */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        direction: rtl;
+       padding-bottom:7rem!important;
+    }
+
+    .form-control {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #2fdf84;
+        /* Change border color on focus */
+        box-shadow: 0 0 5px rgba(0, 255, 76, 0.5);
+    }
+
+    .btn-primary {
+        width: 100%;
+        /* Make button full width */
+        margin-top: 1rem;
+        /* Space above button */
+    }
+
+    @@media (max-width: 768px) {
+        .Fregister {
+            width: 90%;
+            padding: 15px;
+        }
+
+        #account {
+            position: relative;
+            left: 2rem;
+            top: 1rem;
+        }
+
+        .send {
+            position: relative;
+            top: 1px;
+            left: 3px;
+        }
+    }
+</style>

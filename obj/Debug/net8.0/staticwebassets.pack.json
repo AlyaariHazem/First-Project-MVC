@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FirstProjectWithMVC.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FirstProjectWithMVC.bundle.scp.css"
-    },
-    {
       "Id": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\SideBar.css",
       "PackagePath": "staticwebassets\\css\\SideBar.css"
     },

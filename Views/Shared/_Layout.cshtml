@@ -43,14 +43,25 @@
 </head>
 
 <body>
-    @Html.Partial("_Header") <!-- Include the header partial view here -->
-    @Html.Partial("SideBar");
-    <div class="page-wrapper">
-        <div class="content container-fluid">
 
+    @if (User.Identity.IsAuthenticated)
+    {
+        <partial name="_Header" />
+        <partial name="SideBar" />
+
+        <div class="page-wrapper">
             @RenderBody()
-
         </div>
+    }
+    else
+    {
+        @RenderBody()
+    }
+    @if(User.IsInRole("Admin"))
+    {
+        <partial name="_Header" />
+    }
+
 
     </div>
 

@@ -1,4 +1,5 @@
 ﻿@* Views/Shared/_Header.cshtml *@
+
 <header>
     <div class="header-outer" dir="rtl">
         <div class="header">
@@ -65,13 +66,14 @@
                             <img class="rounded-circle" src="~/img/user-06.jpg" width="30" alt="Admin">
                             <span class="status online"></span>
                         </span>
-                        <span>Admin</span>
+                        <span>@User.Identity.Name</span>
+
                     </a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">الملف الشخصي</a>
                         <a class="dropdown-item" href="#">تعديل الملف الشخصي</a>
                         <a class="dropdown-item" href="#">الإعدادات</a>
-                        <a class="dropdown-item" href="#">خروج</a>
+                        <a class="dropdown-item" asp-controller="Account" asp-action="Logout">خروج</a>
                     </div>
                 </li>
             </ul>

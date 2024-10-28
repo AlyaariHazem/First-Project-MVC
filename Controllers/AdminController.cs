@@ -7,7 +7,7 @@ namespace FirstProjectWithMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("Dashboard");
         }
         public IActionResult dashboard()
         {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y7A6Qru1mOJLSBBN0qzfUX+6BUfq9enEHHJYaKm0p3w=",
+  "Hash": "BTZbKhe40O6w11YF91+Q7fGR5P8wm2w04ZkN1dnIfp8=",
   "Source": "FirstProjectWithMVC",
   "BasePath": "_content/FirstProjectWithMVC",
   "Mode": "Default",
@@ -16,44 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FirstProjectWithMVC.styles.css",
-      "SourceId": "FirstProjectWithMVC",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/FirstProjectWithMVC",
-      "RelativePath": "FirstProjectWithMVC.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\FirstProjectWithMVC.styles.css"
-    },
-    {
-      "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FirstProjectWithMVC.bundle.scp.css",
-      "SourceId": "FirstProjectWithMVC",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/FirstProjectWithMVC",
-      "RelativePath": "FirstProjectWithMVC.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FirstProjectWithMVC.bundle.scp.css"
-    },
     {
       "Identity": "D:\\MVC\\FirstProjectWithMVC\\FirstProjectWithMVC\\wwwroot\\css\\bootstrap-tagsinput.css",
       "SourceId": "FirstProjectWithMVC",

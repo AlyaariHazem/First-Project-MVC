@@ -1,0 +1,158 @@
+@model FirstProjectWithMVC.ViewModels.LoginRegister.LoginViewModel
+
+<form asp-action="SaveLogin" asp-controller="Account" method="post" class="login-form">
+    <div class="container1">
+        <h3 style="text-align: center;">تسجيل الدخول إلى نظام مدرستي</h3>
+        <hr>
+            <!-- Display Validation Summary for general errors -->
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="UserName" class="form-label">اسم المستخدم</label>
+            <input asp-for="UserName" class="form-input" placeholder="أدخل اسم المستخدم" onfocus="showPlaceholder(this)" onblur="hidePlaceholder(this)" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="form-label">كلمة السر</label>
+            <input asp-for="Password" type="password" class="form-input" placeholder="أدخل كلمة المرور" onfocus="showPlaceholder(this)" onblur="hidePlaceholder(this)" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <!-- Remember Me Checkbox -->
+        <div class="form-group remember-me">
+            <input asp-for="RememberMe" type="checkbox" id="rememberMeCheckbox" />
+            <label asp-for="RememberMe" class="remember-label">تذكرني</label>
+            <span asp-validation-for="RememberMe" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">تسجيل الدخول</button>
+        <p dir="rtl" class="signin-text">إنشاء حساب جديد : <a asp-controller="Account" asp-action="Register">إنشاء الحساب</a></p>
+    </div>
+</form>
+
+
+<style>
+    .container1 {
+        margin: 1rem;
+    }
+
+    /* Body Styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #rememberMeCheckbox{
+        height: 22px!important;
+        width: 8.2%!important;
+    }
+    .remember-me {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .remember-label {
+        margin-right: 0.5rem;
+        color: #555;
+        font-weight: bold;
+    }
+
+    /* Form styling */
+    .login-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    /* Form Container */
+    .login-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title */
+    .form-title {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #333;
+        font-size: 1.8rem;
+    }
+
+    /* Form Group */
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        font-weight: bold;
+        color: #555;
+        position: relative;
+        display: block;
+    }
+
+    /* Input Styling */
+    .form-input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus {
+        border-color: #4CAF50;
+        /* Highlight color on focus */
+        outline: none;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.2);
+    }
+
+    /* Submit Button */
+    .btn-submit {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1.1rem;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #45a049;
+        /* Darker green on hover */
+    }
+
+    /* Responsive Styling */
+    @@media (max-width: 480px) {
+        .login-form {
+            padding: 1.5rem;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+<script>
+    function showPlaceholder(input) {
+        input.placeholder = "";
+    }
+
+    function hidePlaceholder(input) {
+        input.placeholder = input.name === "UserName" ? "أدخل اسم المستخدم" : "أدخل كلمة المرور";
+    }
+</script>
+

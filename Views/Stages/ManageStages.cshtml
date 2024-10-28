@@ -1,5 +1,4 @@
-﻿
-<div id="id01" class="">
+﻿<div id="id01" class="">
     <div class="modal-content">
         <div class="container1" dir="rtl">
             <h2 class="school">تخصيص المدرسة</h2>
@@ -24,21 +23,21 @@
 
             <div id="contentStages">
                 @* display the Classes table *@
-                <partial name="_StagePartial"/>
+                <partial name="_StagePartial" />
 
             </div>
 
 
             <div id="contentClasses" style="display: none;">
                 @* display the Classes table *@
-                <partial name="_ClassPartial"/>
+                <partial name="_ClassPartial" />
             </div>
 
             @* display the divisions table *@
             <div id="contentDivisions" style="display: none;">
 
-                <partial name="_DivisionPartial"/>
-             
+                <partial name="_DivisionPartial" />
+
             </div>
 
         </div>
@@ -59,7 +58,7 @@
     }
 </style>
 <script>
-   
+ 
     function resetForm() {
         document.querySelector('input[name="ClassID"]').value = ''; // Reset ClassID
         document.querySelector('input[name="ClassName"]').value = ''; // Reset ClassName
@@ -140,7 +139,7 @@
             });
         }
     }
-    
+
     function deleteClassFromStage(id) {
         if (confirm("هل أنت متأكد أنك تريد الحذف؟")) {
             $.ajax({
@@ -183,37 +182,37 @@
 
 <script>
     $(document).ready(function () {
-        
+
     });
 
     function TabContent(tabClicked) {
-    const tabs = ["contentStages", "contentClasses", "contentDivisions"];// I make breakpoint here 
+        const tabs = ["contentStages", "contentClasses", "contentDivisions"];// I make breakpoint here 
 
-    // Loop through tabs to hide/show and manage classes
-    tabs.forEach(tab => {
-        const tabElement = document.getElementById(tab);
-        const buttonElement = document.querySelector(`button[onclick="TabContent('${tab}')"]`);
+        // Loop through tabs to hide/show and manage classes
+        tabs.forEach(tab => {
+            const tabElement = document.getElementById(tab);
+            const buttonElement = document.querySelector(`button[onclick="TabContent('${tab}')"]`);
 
-        if (tab === tabClicked) {
-            tabElement.style.display = "block"; // Show the selected tab content
-            buttonElement.classList.add("tabChecked"); // Add active class to the button
-            buttonElement.setAttribute("aria-expanded", "true");
+            if (tab === tabClicked) {
+                tabElement.style.display = "block"; // Show the selected tab content
+                buttonElement.classList.add("tabChecked"); // Add active class to the button
+                buttonElement.setAttribute("aria-expanded", "true");
 
-            // Call the respective function when each tab is clicked
-            if (tab === "contentStages") {
-                DisplayStagesInfo();
-            } else if (tab === "contentClasses") {
-                loadTabContent('/Classes/DisplayClassesInfo', 'contentClasses');
-            } else if (tab === "contentDivisions") {
-                loadTabContent('/Division/DisplayDivisioinInfo', 'contentDivisions');  // This should load the divisions data
+                // Call the respective function when each tab is clicked
+                if (tab === "contentStages") {
+                    DisplayStagesInfo();
+                } else if (tab === "contentClasses") {
+                    loadTabContent('/Classes/DisplayClassesInfo', 'contentClasses');
+                } else if (tab === "contentDivisions") {
+                    loadTabContent('/Division/DisplayDivisioinInfo', 'contentDivisions');  // This should load the divisions data
+                }
+            } else {
+                tabElement.style.display = "none"; // Hide other tab content
+                buttonElement.classList.remove("tabChecked"); // Remove active class from other buttons
+                buttonElement.setAttribute("aria-expanded", "false");
             }
-        } else {
-            tabElement.style.display = "none"; // Hide other tab content
-            buttonElement.classList.remove("tabChecked"); // Remove active class from other buttons
-            buttonElement.setAttribute("aria-expanded", "false");
-        }
-    });
-}
+        });
+    }
 
     // Function to fetch and display the stages info via AJAX
     function DisplayStagesInfo() {
@@ -231,16 +230,16 @@
     }
 
     function loadTabContent(url, targetId) {
-    $.ajax({
-        url: url,
-        method: 'GET',
-        success: function (data) {
-            $("#" + targetId).html(data);
-        },
-        error: function (err) {
-            console.error('Error loading content:', err);
-        }
-    });
-}
+        $.ajax({
+            url: url,
+            method: 'GET',
+            success: function (data) {
+                $("#" + targetId).html(data);
+            },
+            error: function (err) {
+                console.error('Error loading content:', err);
+            }
+        });
+    }
 
 </script>

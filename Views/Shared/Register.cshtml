@@ -1,0 +1,126 @@
+@model FirstProjectWithMVC.ViewModels.Register.RegisterViewModel
+
+<form dir="rtl" class="Fregister" action="/Account/SaveRegister" method="post">
+    <div class="container1">
+        <h3 style="text-align: center;">تسجيل حساب جديد</h3>
+        <hr>
+        <!-- Display Validation Summary for general errors -->
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="UserName" class="control-label">اسم المستخدم</label>
+            <input asp-for="UserName" onfocus="ShowPlaceholder(this)" onblur="hidePlaceholder(this)"
+                class="form-control" placeholder="أدخل اسم المستخدم" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password" class="control-label">كلمة السر</label>
+            <input asp-for="Password" onfocus="ShowPlaceholder(this)" onblur="hidePlaceholder(this)" type="password"
+                class="form-control" placeholder="أدخل كلمة المرور" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ConfirmPassword" class="control-label">كرر كملة السر</label>
+            <input asp-for="ConfirmPassword" onfocus="ShowPlaceholder(this)" onblur="hidePlaceholder(this)"
+                type="password" class="form-control" placeholder="كرر كلمة المرور" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Role" class="control-label">اختر الدور</label>
+            <select asp-for="Role" class="form-control" asp-items="Model.Roles">
+                <option value="">اختر دورًا</option>
+            </select>
+            <span asp-validation-for="Role" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary send">إرسال</button><br>
+        <p dir="rtl" id="account" class="signin-text">يوجد حساب بالفعل : <a asp-controller="Account"
+                asp-action="Index">تسجيل الدخول</a></p>
+
+    </div>
+</form>
+
+<style>
+    .container1 {
+        margin: 3rem;
+    }
+
+    #account {
+        position: relative;
+        left: 9rem;
+        top: 1rem;
+    }
+
+    .Fregister {
+        max-width: 600px;
+        margin: 5% auto;
+        /* Center the form on the page */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        direction: rtl;
+    }
+
+    .form-control {
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        transition: border-color 0.3s;
+    }
+
+    .form-control:focus {
+        border-color: #2fdf84;
+        /* Change border color on focus */
+        box-shadow: 0 0 5px rgba(0, 255, 76, 0.5);
+    }
+
+    .btn-primary {
+        width: 100%;
+        /* Make button full width */
+        margin-top: 1rem;
+        /* Space above button */
+    }
+
+    .signin-text {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .Fregister {
+            width: 90%;
+            padding: 15px;
+        }
+
+        #account {
+            position: relative;
+            left: 2rem;
+            top: 1rem;
+        }
+
+        .send {
+            position: relative;
+            top: 1px;
+            left: 3px;
+        }
+    }
+</style>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script>
+    function ShowPlaceholder(input) {
+        input.placeholder = "";
+    }
+
+    function hidePlaceholder(input) {
+        input.placeholder = input.name === "UserName" ? "أدخل اسم المستخدم" : "أدخل كلمة المرور";
+    }
+</script>

@@ -1,0 +1,229 @@
+﻿<div class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+        <div id="sidebar-menu" class="sidebar-menu">
+            <div class="header-left">
+                <a class="logo">
+                    <img src="~/img/logo1.png" width="40" height="40" alt="">
+                    <span class="text-uppercase">مدرستي</span>
+                </a>
+            </div>
+            <ul class="sidebar-ul" dir="rtl">
+                <li class="menu-title">القائمة</li>
+
+                <!-- الصفحة الرئيسية (Dashboard) -->
+                <li class="active">
+                    <a href="@Url.Action("Dashboard", "Admin")">
+                        <img src="~/img/sidebar/icon-1.png" alt="icon">
+                        <span>الصفحة الرئيسية</span>
+                    </a>
+                </li>
+
+                <!-- الإعدادات (Settings) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('sittings')">
+                        <img src="~/img/sidebar/icon-14.png" alt="icon">
+                        <span>الإعدادات</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-sittings" style="display: none;">
+                        <li><a href="@Url.Action("Years", "Sitting")"><span>السنوات الدراسية</span></a></li>
+                        <li><a href="@Url.Action("SchoolInfo", "Sitting")"><span>معلومات المدرسة</span></a></li>
+                        <li><a href="@Url.Action("index", "Stages")"><span>المراحل والصفوف</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- المدرسين (Teachers) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('teachersSubmenu')">
+                        <img src="~/img/sidebar/icon-3.png" alt="icon">
+                        <span>المدرسين</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-teachersSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("Index", "Teacher")"><span>جميع المدرسين</span></a></li>
+                        <li><a href="@Url.Action("Add", "Teacher")"><span>إضافة مدرس</span></a></li>
+                        <li><a href="@Url.Action("Edit", "Teacher")"><span>تعديل مدرس</span></a></li>
+                        <li><a href="@Url.Action("About", "Teacher")"><span>عن المدرسين</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- الطلاب (Students) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('studentsSubmenu')">
+                        <img src="~/img/sidebar/icon-3.png" alt="icon">
+                        <span>الطلاب</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-studentsSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("AllStudents", "Students")"><span>كل الطلاب</span></a></li>
+                        <li><a href="@Url.Action("AddStudent", "Students")"><span>إضافة طالب</span></a></li>
+                        <li><a href="@Url.Action("EditStudent", "Students")"><span>تعديل طالب</span></a></li>
+                        <li><a href="@Url.Action("NewStudent", "Students")"><span>طالب جديد</span></a></li>
+                        <li><a href="@Url.Action("AboutStudents", "Students")"><span>عن الطلاب</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- أولياء الأمور (Guardians) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('guardianSubmenu')">
+                        <img src="~/img/sidebar/icon-4.png" alt="icon">
+                        <span>أولياء الأمور</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-guardianSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("AllGuardians", "Guardians")"><span>عرض أولياء الأمور</span></a></li>
+                        <li><a href="@Url.Action("AddGuardian", "Guardians")"><span>إضافة ولي أمر</span></a></li>
+                    </ul>
+                </li>
+                
+                <!-- موضفين (Employees) -->
+
+                <li>
+                    <a href="@Url.Action("Index", "Calendar")">
+                        <img src="~/img/sidebar/icon-4.png" alt="icon">
+                        <span>إضافة موظفين</span>
+                    </a>
+                </li>
+
+                <!-- التقويم (Calendar) -->
+                <li>
+                    <a href="@Url.Action("Index", "Calendar")">
+                        <img src="~/img/sidebar/icon-6.png" alt="icon">
+                        <span>التقويم</span>
+                    </a>
+                </li>
+
+                <!-- الإختبارات (Exams) -->
+                <li>
+                    <a href="@Url.Action("Index", "Exams")">
+                        <img src="~/img/sidebar/icon-7.png" alt="icon">
+                        <span>الإختبارات</span>
+                    </a>
+                </li>
+
+                <!-- العطل (Holidays) -->
+                <li>
+                    <a href="@Url.Action("Index", "Holidays")">
+                        <img src="~/img/sidebar/icon-8.png" alt="icon">
+                        <span>العطل</span>
+                    </a>
+                </li>
+
+                <!-- الأحداث (Events) -->
+                <li>
+                    <a href="@Url.Action("Index", "Events")">
+                        <img src="~/img/sidebar/icon-9.png" alt="icon">
+                        <span>الأحداث</span>
+                    </a>
+                </li>
+
+                <!-- الحسابات (Accounts) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('accountsSubmenu')">
+                        <img src="~/img/sidebar/icon-10.png" alt="icon">
+                        <span>الحسابات</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-accountsSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("Invoices", "Accounts")"><span>الفواتير</span></a></li>
+                        <li><a href="@Url.Action("Payments", "Accounts")"><span>المدفوعات</span></a></li>
+                        <li><a href="@Url.Action("Expenses", "Accounts")"><span>النفقات</span></a></li>
+                        <li><a href="@Url.Action("Taxes", "Accounts")"><span>الضرائب</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- كشف المرتبات (Payroll) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('payrollSubmenu')">
+                        <img src="~/img/sidebar/icon-11.png" alt="icon">
+                        <span>كشف المرتبات</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-payrollSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("EmployeeSalaries", "Payroll")"><span>مرتبات الموظفين</span></a></li>
+                        <li><a href="@Url.Action("Installments", "Payroll")"><span>الأقساط</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- المدونات (Blogs) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('blogSubmenu')">
+                        <img src="~/img/sidebar/icon-12.png" alt="icon">
+                        <span>المدونات</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-blogSubmenu" style="display: none;">
+                        <li><a href="@Url.Action("Blog", "Blog")"><span>عرض المدونات</span></a></li>
+                        <li><a href="@Url.Action("Add", "Blog")"><span>إضافة مدونة</span></a></li>
+                        <li><a href="@Url.Action("Edit", "Blog")"><span>تعديل مدونة</span></a></li>
+                    </ul>
+                </li>
+
+                <!-- إدارة (Management) -->
+                <li class="submenu">
+                    <a href="javascript:void(0);" onclick="toggleSubmenu('mangmentSubmenu')">
+                        <img src="~/img/sidebar/icon-3.png" alt="icon">
+                        <span>إدارة</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="list-unstyled" id="submenu-mangmentSubmenu" style="display: none;">
+                        <!-- الموظفين (Employees) -->
+                        <li class="submenu">
+                            <a href="javascript:void(0);" onclick="toggleSubmenu('employeesSubmenu')">
+                                <img src="~/img/sidebar/icon-3.png" alt="icon">
+                                <span>الموظفين</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled" id="submenu-employeesSubmenu" style="display: none;">
+                                <li><a href="@Url.Action("AllEmployees", "Employees")"><span>كل الموظفين</span></a></li>
+                                <li><a href="@Url.Action("Vacations", "Employees")"><span>العطل</span></a></li>
+                                <li><a href="@Url.Action("LeaveRequests", "Employees")"><span>طلبات الإجازة</span></a>
+                                </li>
+                                <li><a href="@Url.Action("Attendance", "Employees")"><span>الحضور</span></a></li>
+                                <li><a href="@Url.Action("Departments", "Employees")"><span>الأقسام</span></a></li>
+                                <li><a href="@Url.Action("Tasks", "Employees")"><span>المهام</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="@Url.Action("Activities", "Management")"><span>الأنشطة</span></a></li>
+                        <li><a href="@Url.Action("Users", "Management")"><span>المستخدمين</span></a></li>
+
+                        <!-- التقارير (Reports) -->
+                        <li class="submenu">
+                            <a href="javascript:void(0);" onclick="toggleSubmenu('reportsSubmenu')">
+                                <img src="~/img/sidebar/icon-3.png" alt="icon">
+                                <span>التقارير</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="list-unstyled" id="submenu-reportsSubmenu" style="display: none;">
+                                <li><a href="@Url.Action("ExpenseReport", "Reports")"><span>تقرير النفقات</span></a>
+                                </li>
+                                <li><a href="@Url.Action("InvoiceReport", "Reports")"><span>تقرير الفاتورة</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Toggle function for submenus
+
+    function toggleSubmenu(submenuId) {
+        var submenu = document.getElementById('submenu-' + submenuId);
+        var arrow = submenu.previousElementSibling.querySelector('.menu-arrow');
+
+        // Check the current display state and toggle the submenu
+        if (submenu.style.display === 'none' || submenu.style.display === '') {
+            submenu.style.display = 'block';  // Show the submenu
+            arrow.classList.add('rotate');   // Rotate the arrow
+        } else {
+            submenu.style.display = 'none';  // Hide the submenu
+            arrow.classList.remove('rotate');  // Reset the arrow rotation
+        }
+    }
+
+</script>

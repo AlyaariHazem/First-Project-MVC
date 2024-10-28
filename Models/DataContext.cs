@@ -1,9 +1,11 @@
 ﻿using Backend.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SchoolManagementSystem.Models;
 
 namespace FirstProjectWithMVC.Models
 {
-    public class DataContext:DbContext
+    public class DataContext:IdentityDbContext<ApplicationUser>
     {
         public DbSet<School> Schools { get; set; }
         public DbSet<Class> Classes { get; set; }

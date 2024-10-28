@@ -26,32 +26,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\MVC\FirstProjectWithMVC\FirstProjectWithMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Dashboard/Dashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/School.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNjaG9vbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVCYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/SideBarAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNpZGVCYXJBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -81,7 +93,3 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/MVC/FirstProjectWithMVC/FirstProjectWithMVC/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-rvu9d14kda

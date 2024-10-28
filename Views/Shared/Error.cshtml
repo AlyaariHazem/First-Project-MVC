@@ -1,55 +1,74 @@
 ﻿<div class="container1">
     <h1 id="h11">404</h1>
     <p id="p1">Oops! The page you're looking for doesn't exist.</p>
+    <p id="p2">It seems the page has been moved or never existed.</p>
     <p class="animation">Let’s get you back <a href="/" id="a1">Home</a>.</p>
 </div>
+
 <style>
     .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
         text-align: center;
+        background-color: #f8f9fa;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     #h11 {
-        font-size: 10rem;
+        font-size: 8rem;
         margin: 0;
         color: #343a40;
+        font-weight: bold;
+        letter-spacing: -4px;
     }
 
     #p1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         color: #6c757d;
+        margin-top: 10px;
+    }
+
+    #p2 {
+        font-size: 1.2rem;
+        color: #adb5bd;
+        margin-top: 10px;
     }
 
     #a1 {
         display: inline-block;
-        padding: 10px 20px;
-        margin-top: 20px;
+        padding: 12px 24px;
+        margin-top: 25px;
         font-size: 1.2rem;
         color: #fff;
         background-color: #007bff;
         text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
-    a:hover {
+    #a1:hover {
         background-color: #0056b3;
+        transform: scale(1.05);
+        box-shadow: 0 6px 10px rgba(0, 123, 255, 0.4);
     }
 
     .animation {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #6c757d;
-        animation: blink 1s infinite;
+        animation: blink 1.5s infinite;
     }
 
     @@keyframes blink {
-
-        0%,
-        100% {
+        0%, 100% {
             opacity: 1;
         }
-
         50% {
-            opacity: 0;
+            opacity: 0.5;
         }
     }
 </style>
