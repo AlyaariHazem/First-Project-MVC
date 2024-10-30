@@ -46,9 +46,6 @@
 
     @if (User.Identity.IsAuthenticated)
     {
-        <partial name="_Header" />
-        <partial name="SideBar" />
-
         <div class="page-wrapper">
             @RenderBody()
         </div>
@@ -57,9 +54,20 @@
     {
         @RenderBody()
     }
+    @if(User.IsInRole("Teacher"))
+    {
+        <partial name="_Header" />
+        <partial name="SideBar"/>
+    }
+    @if(User.IsInRole("Student"))
+    {
+        <partial name="_Header" />
+        <partial name="SideBar"/>
+    }
     @if(User.IsInRole("Admin"))
     {
         <partial name="_Header" />
+        <partial name="SideBarAdmin"/>
     }
 
 

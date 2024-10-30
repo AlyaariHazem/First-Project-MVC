@@ -32,6 +32,7 @@ namespace FirstProjectWithMVC.Controllers.Account
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> SaveRegister(RegisterViewModel userViewModel)
         {
             if (ModelState.IsValid)
@@ -83,6 +84,7 @@ namespace FirstProjectWithMVC.Controllers.Account
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> SaveLogin(LoginViewModel loginViewModel)
         {
             if (ModelState.IsValid)

@@ -2,6 +2,7 @@ using FirstProjectWithMVC.Models;
 using FirstProjectWithMVC.Repository;
 using FirstProjectWithMVC.Repository.School;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using SchoolManagementSystem.Models;
 
 namespace FirstProjectWithMVC
@@ -13,26 +14,25 @@ namespace FirstProjectWithMVC
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllersWithViews(
-            // conf=>conf.Filters.Add("", ""); //piple line Filter
-            );
+            builder.Services.AddControllersWithViews();
 
-            //connection with Database 
+            // Connection with Database
             builder.Services.AddDbContext<DataContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            }
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
             );
 
+            // Register custom repositories
             builder.Services.AddScoped<IStagesRepository, StagesRepository>();
             builder.Services.AddScoped<IClassesRepository, ClassesRepository>();
             builder.Services.AddScoped<IDivisionRepository, DivisionRepository>();
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(option =>
+
+            // Configure Identity services
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
-                option.Password.RequiredLength = 4;
-                option.Password.RequireDigit = false;
-                option.Password.RequireNonAlphanumeric = false;
-                option.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 4;
+                options.Password.RequireDigit = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
             }).AddEntityFrameworkStores<DataContext>();
 
             var app = builder.Build();
@@ -45,19 +45,17 @@ namespace FirstProjectWithMVC
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseAuthentication();
             
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.UseDeveloperExceptionPage();
+
 
             app.MapControllerRoute(
-              name: "default",
-              pattern: "{controller=Account}/{action=Index}");
-
+                name: "default",
+                pattern: "{controller=Account}/{action=Index}");
 
             app.Run();
-
         }
-
     }
 }

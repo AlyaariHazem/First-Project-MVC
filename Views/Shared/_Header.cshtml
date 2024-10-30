@@ -3,9 +3,12 @@
 <header>
     <div class="header-outer" dir="rtl">
         <div class="header">
-            <a id="mobile_btn" (click)="open()" class="mobile_btn float-left" href="#sidebar"><i class="fas fa-bars"></i></a>
-            <app-sidebar [sidebar]=toggle></app-sidebar>
-            <a id="toggle_btn" class="float-right" href="javascript:void(0);">
+
+            <a id="mobile_btn" onclick="openSidebar()" class="mobile_btn float-left">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a id="toggle_btn" class="float-right">
                 <img src="~/img/sidebar/icon-21.png" alt="">
             </a>
             <ul class="nav float-right">
@@ -41,10 +44,12 @@
                                     <a href="#">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="John Doe" src="~/img/user-06.jpg" class="img-fluid rounded-circle">
+                                                <img alt="John Doe" src="~/img/user-06.jpg"
+                                                    class="img-fluid rounded-circle">
                                             </span>
                                             <div class="media-body">
-                                                <p class="noti-details"><span class="noti-title">المدرسة</span> إشعار مهم</p>
+                                                <p class="noti-details"><span class="noti-title">المدرسة</span> إشعار
+                                                    مهم</p>
                                                 <p class="noti-time">
                                                     <span class="notification-time">مند ساعتين</span>
                                                 </p>
@@ -80,3 +85,24 @@
         </div>
     </div>
 </header>
+<style>
+    .toggle_btn:hover {
+        cursor: pointer !important;
+    }
+     @@media (min-width: 1000px) {
+        
+        #CloseSidebar{display: none;}
+        }
+     
+</style>
+<script>
+    function openSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+            sidebar.style.display = "block";
+            @* document.getElementById("CloseSidebar").style.display="none"; *@
+        } else {
+            console.warn("Sidebar element with ID 'sidebar' not found.");
+        }
+    }
+</script>

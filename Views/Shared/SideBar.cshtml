@@ -5,6 +5,8 @@
                 <a class="logo">
                     <img src="~/img/logo1.png" width="40" height="40" alt="">
                     <span class="text-uppercase">مدرستي</span>
+                    <span id="CloseSidebar" onclick="closeSidebar()"
+                        style="color:red;position:absolute;left:1rem;display=block;font-size:22px;cursor:pointer;background-color:red;height:0px;">&times;</span>
                 </a>
             </div>
             <ul class="sidebar-ul" dir="rtl">
@@ -40,7 +42,7 @@
                         <span class="menu-arrow"></span>
                     </a>
                     <ul class="list-unstyled" id="submenu-teachersSubmenu" style="display: none;">
-                        <li><a href="@Url.Action("Index", "Teacher")"><span>جميع المدرسين</span></a></li>
+                        <li><a asp-controller="Account" asp-action="Register"><span>جميع المدرسين</span></a></li>
                         <li><a href="@Url.Action("Add", "Teacher")"><span>إضافة مدرس</span></a></li>
                         <li><a href="@Url.Action("Edit", "Teacher")"><span>تعديل مدرس</span></a></li>
                         <li><a href="@Url.Action("About", "Teacher")"><span>عن المدرسين</span></a></li>
@@ -216,5 +218,12 @@
             arrow.classList.remove('rotate');  // Reset the arrow rotation
         }
     }
-
+    function closeSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar) {
+            sidebar.style.display = "none";
+        } else {
+            console.warn("Sidebar element with ID 'sidebar' not found.");
+        }
+    }
 </script>
